@@ -1,0 +1,1262 @@
+/* =========================================
+   RESET
+========================================= */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    color: #111111;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+} */
+
+
+/* =========================================
+   SKYWAY DASHBOARD
+   DESKTOP STYLES
+========================================= */
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    color: #111111;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* =========================================
+   VARIABLES
+========================================= */
+
+:root {
+    --teal: #184c4f;
+    --teal-light: #2c7479;
+    --sidebar: #293f41;
+
+    --white: #ffffff;
+    --black: #111111;
+
+    --grey-text: #777777;
+    --light-grey: #eef2f2;
+    --border: #dddddd;
+
+    --radius: 6px;
+
+    --shadow:
+        0 2px 6px rgba(0, 0, 0, 0.14);
+}
+
+
+/* =========================================
+   DASHBOARD LAYOUT
+========================================= */
+
+.dashboard-content {
+    width: min(1060px, 92%);
+    margin: 0 auto;
+}
+
+.dashboard {
+    min-height: 100vh;
+    display: flex;
+}
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 248px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(36, 57, 59, 0.97),
+            rgba(4, 55, 59, 0.98)
+        );
+
+    color: var(--white);
+
+    overflow: hidden;
+    z-index: 1000;
+}
+
+
+/* =========================================
+   SIDEBAR TOP
+========================================= */
+
+.sidebar-top {
+    padding-top: 48px;
+}
+
+
+/* Logo */
+
+.dashboard-logo {
+    display: flex;
+    align-items: center;
+
+    width: max-content;
+
+    margin-left: 27px;
+    margin-bottom: 42px;
+}
+
+.dashboard-logo img {
+    width: 50px;
+    height: auto;
+}
+
+
+/* =========================================
+   SIDEBAR NAVIGATION
+========================================= */
+
+.dashboard-nav {
+    padding: 0 9px;
+}
+
+.nav-link {
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding: 0 27px;
+
+    border-radius: 7px;
+
+    color: rgba(255, 255, 255, 0.95);
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.nav-link i {
+    width: 18px;
+    font-size: 17px;
+}
+
+.nav-link.active {
+    background: #2c7378;
+}
+
+.nav-link:hover {
+    background: rgba(44, 115, 120, 0.75);
+}
+
+
+/* =========================================
+   SIDEBAR BOTTOM
+========================================= */
+
+.sidebar-bottom {
+    position: relative;
+
+    min-height: 360px;
+
+    padding: 0 25px 38px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+/* Message */
+
+.sidebar-message {
+    position: relative;
+    z-index: 2;
+
+    margin-left: 43px;
+    margin-bottom: 16px;
+
+    font-size: 12px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+
+/* Illustration */
+
+.sidebar-illustration {
+    position: absolute;
+
+    left: 0;
+    bottom: 25px;
+
+    width: 100%;
+    height: 180px;
+
+    color: white;
+}
+
+
+/*
+   Decorative route
+*/
+
+.route-line {
+    position: absolute;
+
+    width: 75px;
+    height: 75px;
+
+    left: 72px;
+    bottom: 31px;
+
+    border-left: 1.5px dashed rgba(255, 255, 255, 0.8);
+    border-bottom: 1.5px dashed rgba(255, 255, 255, 0.8);
+
+    transform: rotate(-25deg);
+    border-radius: 0 0 0 30px;
+}
+
+
+/* Planes */
+
+.sidebar-illustration .fa-plane-departure {
+    position: absolute;
+
+    left: 76px;
+    top: 7px;
+
+    font-size: 29px;
+
+    transform: rotate(-38deg);
+}
+
+.sidebar-illustration .fa-plane-arrival {
+    position: absolute;
+
+    right: 72px;
+    top: 12px;
+
+    font-size: 29px;
+
+    transform: rotate(38deg);
+}
+
+
+/* Location dots */
+
+.sidebar-illustration .location-one {
+    position: absolute;
+
+    left: 72px;
+    bottom: 22px;
+
+    font-size: 19px;
+}
+
+.sidebar-illustration .location-two {
+    position: absolute;
+
+    right: 67px;
+    bottom: 18px;
+
+    font-size: 19px;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.dashboard-main {
+    width: calc(100% - 248px);
+    margin-left: 248px;
+
+    min-height: 100vh;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   TOP HEADER
+========================================= */
+
+/* =========================================
+   DASHBOARD HEADER
+========================================= */
+
+.dashboard-header {
+    width: min(1060px, 92%);
+    height: 93px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #777;
+
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.breadcrumb i:first-child {
+    font-size: 16px;
+    color: #777;
+}
+
+.breadcrumb i:nth-child(2) {
+    display: none;
+}
+
+.breadcrumb span {
+    color: #777;
+}
+
+
+/* =========================================
+   USER PROFILE
+========================================= */
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.user-profile img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+.user-details strong {
+    color: #111;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+.user-details span {
+    color: #555;
+
+    font-size: 11px;
+    font-weight: 400;
+
+    line-height: 1.2;
+}
+
+
+
+
+/* Mobile menu */
+
+.mobile-menu-btn {
+    display: none;
+}
+
+
+/* =========================================
+   DASHBOARD CONTENT
+========================================= */
+
+.dashboard-content {
+    width: min(100%, 1030px);
+
+    margin: 0 auto;
+
+    padding: 28px 0 70px;
+}
+
+
+/* =========================================
+   WELCOME
+========================================= */
+
+/* =========================================
+   WELCOME / GREETING
+========================================= */
+
+.welcome-section {
+    margin-top: 27px;
+    margin-bottom: 37px;
+}
+
+.welcome-section h1 {
+    margin: 0 0 2px;
+
+    color: #111;
+
+    font-size: 25px;
+    line-height: 1.25;
+
+    font-weight: 600;
+}
+
+.welcome-section p {
+    margin: 0;
+
+    color: #111;
+
+    font-size: 13px;
+    line-height: 1.4;
+
+    font-weight: 400;
+}
+
+
+/* =========================================
+   SECTION TITLES
+========================================= */
+
+.section-title {
+    font-size: 16px;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 42px;
+}
+
+.stat-card {
+    min-height: 122px;
+
+    padding: 26px 15px;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+
+    box-shadow: var(--shadow);
+}
+
+.stat-icon {
+    width: 39px;
+    height: 39px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background: var(--teal);
+
+    color: white;
+
+    font-size: 20px;
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+.stat-info span {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.stat-info strong {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   UPCOMING TRIP
+========================================= */
+
+.upcoming-section {
+    margin-bottom: 33px;
+}
+
+.upcoming-trip {
+    display: grid;
+    grid-template-columns: 356px 1fr;
+
+    gap: 28px;
+
+    align-items: center;
+}
+
+
+/* Trip Image */
+
+.trip-image {
+    width: 100%;
+    height: 214px;
+
+    overflow: hidden;
+
+    border-radius: 6px;
+}
+
+.trip-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Trip Details */
+
+.trip-details {
+    min-width: 0;
+}
+
+.trip-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+}
+
+.trip-heading h3 {
+    font-size: 19px;
+    font-weight: 400;
+
+    margin-bottom: 14px;
+}
+
+.trip-date {
+    font-size: 11px;
+
+    margin-bottom: 15px;
+}
+
+.flight-info {
+    font-size: 11px;
+}
+
+.flight-info strong {
+    font-weight: 600;
+}
+
+.flight-info span {
+    margin: 0 5px;
+}
+
+
+/* Confirmed */
+
+.confirmed {
+    flex-shrink: 0;
+
+    padding: 3px 11px;
+
+    border-radius: 20px;
+
+    background: #2d7478;
+
+    color: white;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   FLIGHT DETAILS
+========================================= */
+
+.flight-details {
+    display: grid;
+    grid-template-columns:
+        1fr
+        1fr
+        1fr
+        1.5fr;
+
+    margin-bottom: 20px;
+}
+
+.flight-detail {
+    text-align: center;
+
+    border-right: 1px solid #cccccc;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+.flight-detail:first-child {
+    text-align: left;
+}
+
+.flight-detail:last-child {
+    border-right: none;
+}
+
+.flight-detail span {
+    font-size: 10px;
+    color: #222222;
+}
+
+.flight-detail strong {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   TRIP BUTTONS
+========================================= */
+
+.trip-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    min-height: 33px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 17px;
+
+    border-radius: 9px;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: all 0.25s ease;
+}
+
+.btn-primary {
+    background: var(--teal);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #123c3e;
+}
+
+.btn-outline {
+    border: 1px solid #7b9b9d;
+    color: var(--teal);
+
+    background: white;
+}
+
+.btn-outline:hover {
+    background: #f1f6f6;
+}
+
+
+/* =========================================
+   QUICK ACTIONS
+========================================= */
+
+.quick-actions-section {
+    padding: 12px 10px 14px;
+
+    margin-bottom: 58px;
+
+    border: 1px solid #e4e4e4;
+
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.quick-actions-section .section-title {
+    margin-bottom: 8px;
+}
+
+
+.quick-actions-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+
+.quick-action {
+    min-height: 102px;
+
+    padding: 22px 10px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    border: 1px solid #dedede;
+    border-radius: 4px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.quick-action:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.quick-action-icon {
+    width: 37px;
+    height: 37px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background: #e7eeee;
+
+    color: var(--teal);
+
+    font-size: 18px;
+}
+
+
+.quick-action h3 {
+    font-size: 12px;
+    font-weight: 600;
+
+    margin-bottom: 4px;
+}
+
+.quick-action p {
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   POPULAR DESTINATIONS
+========================================= */
+
+.destinations-section {
+    padding: 0 9px;
+}
+
+.section-heading {
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: 26px;
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    margin-bottom: 2px;
+}
+
+.section-heading p {
+    color: #858585;
+
+    font-size: 13px;
+}
+
+
+.destinations-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 67px;
+}
+
+
+/* Destination Card */
+
+.destination-card {
+    position: relative;
+
+    height: 204px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    color: white;
+}
+
+.destination-card::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.75),
+            transparent 55%
+        );
+}
+
+
+.destination-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.destination-card:hover img {
+    transform: scale(1.04);
+}
+
+
+/* Favorite */
+
+.favorite-btn {
+    position: absolute;
+
+    top: 14px;
+    right: 15px;
+
+    z-index: 3;
+
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 23px;
+}
+
+
+/* Destination text */
+
+.destination-overlay {
+    position: absolute;
+
+    z-index: 2;
+
+    left: 13px;
+    right: 13px;
+    bottom: 12px;
+}
+
+.destination-overlay h3 {
+    font-size: 15px;
+    line-height: 1.15;
+
+    font-weight: 500;
+
+    margin-bottom: 2px;
+}
+
+.destination-overlay span {
+    font-size: 9px;
+}
+
+
+/* =========================================
+   RESPONSIVE PREVIEW
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .dashboard-content {
+        width: min(92%, 1030px);
+    }
+
+    .stats-grid {
+        gap: 15px;
+    }
+
+    .upcoming-trip {
+        grid-template-columns: 320px 1fr;
+    }
+
+    .destinations-grid {
+        gap: 25px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        width: 220px;
+    }
+
+    .dashboard-main {
+        width: calc(100% - 220px);
+        margin-left: 220px;
+    }
+
+    .dashboard-header {
+        padding: 0 25px;
+    }
+
+    .dashboard-content {
+        width: 92%;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .upcoming-trip {
+        grid-template-columns: 1fr;
+    }
+
+    .trip-image {
+        height: 250px;
+    }
+
+    .quick-actions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .destinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   SMALL TABLET / MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        transform: translateX(-100%);
+
+        transition: transform 0.3s ease;
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+
+    .dashboard-main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .dashboard-header {
+        height: 75px;
+
+        padding: 0 20px;
+    }
+
+    .mobile-menu-btn {
+        width: 38px;
+        height: 38px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #e9eeee;
+
+        color: var(--teal);
+
+        border-radius: 7px;
+
+        font-size: 17px;
+    }
+
+    .breadcrumb {
+        display: none;
+    }
+
+    .user-details {
+        display: none;
+    }
+
+    .user-profile img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .dashboard-content {
+        width: 92%;
+
+        padding-top: 25px;
+    }
+
+    .welcome-section h1 {
+        font-size: 23px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-actions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destinations-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .dashboard-header {
+        padding: 0 15px;
+    }
+
+    .dashboard-content {
+        width: 94%;
+    }
+
+    .welcome-section {
+        margin-bottom: 28px;
+    }
+
+    .welcome-section h1 {
+        font-size: 21px;
+    }
+
+    .welcome-section p {
+        font-size: 12px;
+    }
+
+    .stat-card {
+        min-height: 95px;
+    }
+
+    .trip-image {
+        height: 210px;
+    }
+
+    .trip-heading h3 {
+        font-size: 18px;
+    }
+
+    .flight-details {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+    .flight-detail {
+        border-right: none;
+        text-align: left;
+
+        border-bottom: 1px solid #eeeeee;
+
+        padding-bottom: 8px;
+    }
+
+    .trip-actions {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        flex: 1;
+    }
+
+    .section-heading h2 {
+        font-size: 23px;
+    }
+
+    .destination-card {
+        height: 220px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .dashboard-header {
+        width: 92%;
+        height: 75px;
+    }
+
+    .breadcrumb {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        width: 38px;
+        height: 38px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #e8eeee;
+
+        color: #184c4f;
+
+        border-radius: 7px;
+
+        font-size: 17px;
+    }
+
+    .user-details {
+        display: none;
+    }
+
+    .user-profile img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .welcome-section {
+        margin-top: 22px;
+        margin-bottom: 30px;
+    }
+
+    .welcome-section h1 {
+        font-size: 21px;
+    }
+
+    .welcome-section p {
+        font-size: 12px;
+    }
+
+}

@@ -1,0 +1,607 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>search results</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+  <link rel="stylesheet" href="/SEARCHcss/search.css">
+  <link rel="stylesheet" href="/SEARCHcss/responsive1.css">
+  <link rel="stylesheet" href="/CSS/responsive.css">
+</head>
+<body>
+  
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-btn" aria-label="Toggle navigation">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <!-- Logo -->
+        <a href="#" class="logo">
+
+            <img src="/asset/logo/logo.png" alt="Skyway Travel Logo">
+            <h2>Skyway <span>Travel</span></h2>
+
+        </a>
+
+        <!-- Navigation -->
+        <nav class="nav-links">
+
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Destinations</a>
+            <a href="#">Packages</a>
+            <a href="#">Contact</a>
+
+        </nav>
+
+        <!-- Right Side -->
+        <div class="nav-right">
+
+            <div class="phone">
+
+                <div class="phone-icon">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </div>
+
+                <div>
+
+                    <small>Talk to our support</small>
+                    <span>+234 806 626 5570</span>
+
+                </div>
+
+            </div>
+
+            <a href="#" class="btn">Get Started</a>
+
+        </div>
+
+    </div>
+
+</header>
+<div class="menu-overlay"></div>
+
+<main class="flight-results-page">
+
+    <!-- ===================== -->
+    <!-- Breadcrumb -->
+    <!-- ===================== -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="#">Home</a>
+                <span>/</span>
+
+                <a href="#">Flights</a>
+                <span>/</span>
+
+                <span class="active">Search Results</span>
+            </nav>
+        </div>
+    </section>
+
+
+    <!-- ===================== -->
+    <!-- Search Summary -->
+    <!-- ===================== -->
+    <section class="search-summary-section">
+        <div class="container">
+
+            <div class="search-summary-card">
+
+                <div class="summary-field">
+
+    <i class="fa-solid fa-plane-departure"></i>
+
+    <div>
+
+        <span class="label">Flying From</span>
+
+        <p>Lagos (LOS)</p>
+
+    </div>
+
+    </div>
+
+                <div class="summary-field">
+                  <i class="fa-solid fa-plane-arrival"></i>
+                    <span class="label">Flying To</span>
+                    <p>Paris (CDG)</p>
+                </div>
+
+                <div class="summary-field">
+                      <i class="fa-solid fa-calendar-days"></i>
+                    <span class="label">Departure</span>
+                    <p>15 Aug 2026</p>
+                </div>
+
+                <div class="summary-field">
+                      <i class="fa-solid fa-calendar-days"></i>
+                    <span class="label">Return</span>
+                    <p>22 Aug 2026</p>
+                </div>
+
+                <div class="summary-field">
+                      <i class="fa-solid fa-user"></i>
+                    <span class="label">Travellers</span>
+                    <p>1 Adult</p>
+                </div>
+
+                <div class="summary-field">
+                      <i class="fa-solid fa-bed"></i>
+                    <span class="label">Cabin</span>
+                    <p>Economy</p>
+                </div>
+
+                <button class="btn btn-primary modify-btn">
+                    Modify Search
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===================== -->
+    <!-- Results Header -->
+    <!-- ===================== -->
+    <section class="results-header">
+        <div class="container">
+
+            <div class="results-top">
+
+                <div class="results-title">
+                    <h2>247 Flights Found</h2>
+                    <p>Showing available flights matching your search.</p>
+                </div>
+
+                <div class="sort-wrapper">
+
+                    <span>Sort By</span>
+
+                    <div class="sort-buttons">
+
+            <button class="sort-btn active" data-sort="price">
+                Price
+            </button>
+
+            <button class="sort-btn" data-sort="departure">
+                Departure
+            </button>
+
+            <button class="sort-btn" data-sort="duration">
+                Duration
+            </button>
+
+        </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- ===================== -->
+    <!-- Main Layout -->
+    <!-- ===================== -->
+    <section class="results-layout">
+
+        <div class="container">
+
+            <div class="results-grid">
+
+               <!-- ==========================================
+     FILTER SIDEBAR
+========================================== -->
+
+<aside class="filter-sidebar">
+
+    <div class="filter-card">
+
+        <!-- Header -->
+        <div class="filter-header">
+
+            <h3>Filters</h3>
+
+            <button class="clear-all">
+                Clear all
+            </button>
+
+        </div>
+
+
+        <!-- Stops -->
+
+        <div class="filter-group">
+
+            <h4>Stops</h4>
+
+            <label class="filter-item">
+
+                <div class="filter-left">
+
+               <input
+                    type="checkbox"
+                    class="stop-filter"
+                    value="Nonstop">
+
+                    <span>Nonstop</span>
+
+                </div>
+
+                <span class="count">62</span>
+
+            </label>
+
+            <label class="filter-item">
+
+                <div class="filter-left">
+
+                <input
+                    type="checkbox"
+                    class="stop-filter"
+                    value="1 Stop">
+
+                    <span>1 Stop</span>
+
+                </div>
+
+                <span class="count">148</span>
+
+            </label>
+
+            <label class="filter-item">
+
+                <div class="filter-left">
+
+                <input
+                    type="checkbox"
+                    class="stop-filter"
+                    value="2 Stops">
+
+                    <span>2 Stops</span>
+
+                </div>
+
+                <span class="count">37</span>
+
+            </label>
+
+        </div>
+
+
+
+        <!-- Airlines -->
+
+        <div class="filter-group">
+
+            <h4>Airlines</h4>
+
+            <label class="filter-item">
+
+                <div class="filter-left">
+
+                   <input
+                        type="checkbox"
+                        class="airline-filter"
+                        value="Air France">
+
+                    <span>Air France</span>
+
+                </div>
+
+                <span class="count">62</span>
+
+            </label>
+
+            <label class="filter-item">
+
+                <div class="filter-left">
+
+                    <input
+                        type="checkbox"
+                        class="airline-filter"
+                        value="Emirates">
+
+                    <span>Emirates</span>
+
+                </div>
+
+                <span class="count">148</span>
+
+            </label>
+
+            <label class="filter-item">
+
+                <div class="filter-left">
+
+                    <input
+                        type="checkbox"
+                        class="airline-filter"
+                        value="Turkish Airlines">
+
+                    <span>Turkish Airlines</span>
+
+                </div>
+
+                <span class="count">37</span>
+
+            </label>
+
+            <label class="filter-item">
+
+                <div class="filter-left">
+
+                    <input
+                        type="checkbox"
+                        class="airline-filter"
+                        value="Qatar Airways">
+                    <span>Qatar Airways</span>
+
+                </div>
+
+                <span class="count">29</span>
+
+            </label>
+
+        </div>
+
+
+
+        <!-- Departure -->
+
+        <div class="filter-group">
+
+            <h4>Departure Time</h4>
+
+            <div class="time-grid">
+
+                <button class="time-btn active">
+                    Morning
+                </button>
+
+                <button class="time-btn">
+                    Afternoon
+                </button>
+
+                <button class="time-btn">
+                    Evening
+                </button>
+
+                <button class="time-btn">
+                    Night
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Price -->
+
+<div class="filter-group">
+
+    <h4>Price Range</h4>
+
+    <div class="price-header">
+
+        <span id="minPriceDisplay">$320</span>
+
+        <span id="maxPriceDisplay">$1450</span>
+
+    </div>
+
+    <div class="slider-wrapper">
+
+        <input
+            type="range"
+            min="320"
+            max="1450"
+            value="320"
+            id="priceMin"
+            class="range-min"
+            aria-label="Minimum price">
+
+        <input
+            type="range"
+            min="320"
+            max="1450"
+            value="1450"
+            id="priceMax"
+            class="range-max"
+            aria-label="Maximum price">
+
+    </div>
+
+</div>
+
+    </div>
+
+</aside>
+
+                <!-- ===================== -->
+                <!-- Flight Results -->
+                <!-- ===================== -->
+
+
+<section class="flight-results" id="flightResults">
+
+
+<section class="flight-results" id="flightResults">
+   
+</section>
+
+<div class="flight-features">
+
+    <span>Refundable</span>
+
+    <span>WiFi</span>
+
+    <span>Meals</span>
+
+    <span>USB</span>
+
+</div>
+</main>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- Logo -->
+
+            <div class="footer-about">
+
+                <img
+                    src="/asset/logo/logo.png"
+                    alt="Skyway Travel Logo"
+                    class="footer-logo">
+
+                <p>
+                    Elevating your travel experience with the best
+                    deals, trusted service and unforgettable journeys.
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+
+                </div>
+
+            </div>
+
+            <!-- Navigation -->
+
+            <div>
+
+                <h4>Navigation</h4>
+
+                <ul>
+
+                    <li><a href="#">About Us</a></li>
+
+                    <li><a href="#">Services</a></li>
+
+                    <li><a href="#">Destinations</a></li>
+
+                    <li><a href="#">Packages</a></li>
+
+                    <li><a href="#">Cruises</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Support -->
+
+            <div>
+
+                <h4>Support</h4>
+
+                <ul>
+
+                    <li><a href="#">Help Center</a></li>
+
+                    <li><a href="#">FAQ</a></li>
+
+                    <li><a href="#">Booking Guide</a></li>
+
+                    <li><a href="#">Payment</a></li>
+
+                    <li><a href="#">Terms & Conditions</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Company -->
+
+            <div>
+
+                <h4>Company</h4>
+
+                <ul>
+
+                    <li><a href="#">About Us</a></li>
+
+                    <li><a href="#">Careers</a></li>
+
+                    <li><a href="#">Blog</a></li>
+
+                    <li><a href="#">Press</a></li>
+
+                    <li><a href="#">Contact Us</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom-content">
+
+            <p>©2026 Skyway Travel. All Rights Reserved.</p>
+
+            <div class="footer-links">
+
+                <a href="#">Privacy Policy</a>
+
+                <a href="#">Terms of Use</a>
+
+                <a href="#">Cookie Policy</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="/JS/navbar.js"></script>
+<script src="/JS/flight.js"></script>
+
+</body>
+</html>

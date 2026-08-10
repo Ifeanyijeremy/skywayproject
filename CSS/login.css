@@ -1,0 +1,879 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    color: #0b3d4a;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* =========================================
+   MAIN LOGIN PAGE
+========================================= */
+
+.login-page {
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 46.5% 53.5%;
+}
+
+
+
+/* =========================================
+   LEFT HERO SECTION
+========================================= */
+
+.login-hero {
+    position: relative;
+
+    min-height: 100vh;
+
+    background-image:
+        url("../asset/images/login-img.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+
+    color: #ffffff;
+}
+
+
+/*
+    Dark overlay over the airplane/cloud image.
+*/
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(10, 15, 18, 0.62),
+            rgba(8, 12, 15, 0.72)
+        );
+
+    z-index: 1;
+}
+
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    height: 100vh;
+
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.login-logo {
+    display: inline-flex;
+
+    width: fit-content;
+}
+
+.login-logo img {
+    width: 50px;
+    height: auto;
+
+    display: block;
+}
+
+.login-logo h3 {
+  display: flex;
+  flex-direction: column;
+ 
+    margin-left: 10px;
+
+    font-size: 1.25rem;
+
+    font-weight: 600;
+
+    color: #ffffff;
+}
+
+.login-logo h3 span {
+    color: #f5a623;
+    font-size: .86rem;
+    font-weight: 400;
+    margin-top: -8px;
+    margin-left: 16px;
+}
+
+/* =========================================
+   HERO MESSAGE
+========================================= */
+
+.hero-message {
+    margin-top: auto;
+    margin-bottom: 18%;
+
+    max-width: 520px;
+}
+
+.hero-message h1 {
+    font-size: clamp(3.4rem, 4.2vw, 4.5rem);
+
+    line-height: 1.05;
+
+    font-weight: 600;
+
+    letter-spacing: -2px;
+
+    color: #ffffff;
+}
+
+.hero-message h1 span {
+    display: block;
+
+    color: #f5a623;
+}
+
+.hero-message p {
+    margin-top: 22px;
+
+    font-size: 1.35rem;
+
+    line-height: 1.35;
+
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+
+
+/* =========================================
+   RIGHT LOGIN SECTION
+========================================= */
+
+.login-section {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+}
+
+
+
+/* =========================================
+   LOGIN CONTAINER
+========================================= */
+
+.login-container {
+    width: min(570px, 82%);
+
+    margin: 0 auto;
+}
+
+
+
+/* =========================================
+   LOGIN HEADER
+========================================= */
+
+.login-header {
+    margin-bottom: 24px;
+}
+
+.login-header h2 {
+    font-size: 2.05rem;
+
+    line-height: 1.2;
+
+    font-weight: 600;
+
+    color: #0a3d4a;
+}
+
+.login-header p {
+    margin-top: 10px;
+
+    font-size: 1rem;
+
+    font-weight: 400;
+
+    color: #145666;
+}
+
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.login-form {
+    width: 100%;
+}
+
+.form-group {
+    width: 100%;
+
+    margin-bottom: 44px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 0.9rem;
+
+    font-weight: 400;
+
+    color: #111111;
+}
+
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.form-group input {
+    width: 100%;
+
+    height: 64px;
+
+    padding: 0 12px;
+
+    border: 1px solid #9b9b9b;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #143f4c;
+
+    font-size: 0.95rem;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #9b9b9b;
+}
+
+.form-group input:focus {
+    border-color: #0b5364;
+
+    box-shadow:
+        0 0 0 3px rgba(11, 83, 100, 0.08);
+}
+
+
+
+/* =========================================
+   PASSWORD
+========================================= */
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 50px;
+}
+
+.password-toggle {
+    position: absolute;
+
+    top: 50%;
+    right: 14px;
+
+    transform: translateY(-50%);
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    background: transparent;
+
+    color: #0a2840;
+
+    font-size: 0.9rem;
+}
+
+.password-toggle:hover {
+    color: #0b5364;
+}
+
+
+
+/* =========================================
+   PASSWORD FOOTER
+========================================= */
+
+.password-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 5px;
+}
+
+.helper-text {
+    font-size: 0.75rem;
+
+    color: #999999;
+}
+
+.forgot-password {
+    font-size: 0.75rem;
+
+    color: #0a4a5b;
+
+    transition: color 0.2s ease;
+}
+
+.forgot-password:hover {
+    color: #e77b5e;
+}
+
+
+
+/* =========================================
+   REMEMBER ME
+========================================= */
+
+.remember-row {
+    margin-top: -10px;
+
+    margin-bottom: 31px;
+}
+
+.remember-label {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    cursor: pointer;
+
+    font-size: 0.85rem;
+
+    color: #174b59;
+}
+
+.remember-label input {
+    position: absolute;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+.custom-checkbox {
+    width: 18px;
+    height: 18px;
+
+    border: 1.5px solid #075469;
+
+    border-radius: 5px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s ease;
+}
+
+.remember-label input:checked + .custom-checkbox {
+    background: #075469;
+}
+
+.remember-label input:checked + .custom-checkbox::after {
+    content: "✓";
+
+    color: #ffffff;
+
+    font-size: 0.7rem;
+
+    font-weight: 700;
+}
+
+
+
+/* =========================================
+   SIGN IN BUTTON
+========================================= */
+
+.signin-btn {
+    width: 100%;
+
+    height: 64px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: #e47b5d;
+
+    color: #ffffff;
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.signin-btn:hover {
+    background: #d96e51;
+
+    box-shadow:
+        0 8px 20px rgba(228, 123, 93, 0.22);
+}
+
+.signin-btn:active {
+    transform: scale(0.99);
+}
+
+
+
+/* =========================================
+   SOCIAL DIVIDER
+========================================= */
+
+.social-divider {
+    width: 100%;
+
+    margin: 33px 0 27px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.social-divider span {
+    height: 1px;
+
+    flex: 1;
+
+    background: #a8a8a8;
+}
+
+.social-divider p {
+    flex-shrink: 0;
+
+    font-size: 0.9rem;
+
+    color: #999999;
+}
+
+
+
+/* =========================================
+   SOCIAL BUTTONS
+========================================= */
+
+.social-btn {
+    width: 100%;
+
+    height: 65px;
+
+    margin-bottom: 31px;
+
+    border: 1px solid #999999;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 13px;
+
+    color: #0c4858;
+
+    font-size: 1rem;
+
+    font-weight: 400;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.social-btn:hover {
+    background: #fafafa;
+
+    border-color: #0a5263;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+
+/* =========================================
+   GOOGLE
+========================================= */
+
+.google-icon {
+    width: 29px;
+    height: 29px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 1.45rem;
+
+    font-weight: 700;
+
+    background:
+        linear-gradient(
+            45deg,
+            #4285f4 25%,
+            #34a853 25% 50%,
+            #fbbc05 50% 75%,
+            #ea4335 75%
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+
+/* =========================================
+   APPLE
+========================================= */
+
+.apple-btn i {
+    font-size: 1.65rem;
+
+    color: #000000;
+}
+
+
+
+/* =========================================
+   SIGN UP
+========================================= */
+
+.signup-text {
+    text-align: center;
+
+    margin-top: 2px;
+
+    font-size: 0.95rem;
+
+    color: #999999;
+}
+
+.signup-text a {
+    color: #0b4e60;
+
+    margin-left: 4px;
+}
+
+.signup-text a:hover {
+    color: #e47b5d;
+}
+
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .login-page {
+        grid-template-columns: 43% 57%;
+    }
+
+    .hero-content {
+        padding: 40px;
+    }
+
+    .login-logo img {
+        width: 40px;
+    }
+
+    .hero-message h1 {
+        font-size: clamp(2.8rem, 4vw, 3.8rem);
+    }
+
+    .hero-message p {
+        font-size: 1.1rem;
+    }
+
+    .login-container {
+        width: min(520px, 82%);
+    }
+
+}
+
+
+
+/* =========================================
+   TABLET / SMALL LAPTOP
+========================================= */
+
+@media (max-width: 768px) {
+
+    .login-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* HERO */
+
+    .login-hero {
+        min-height: 360px;
+
+        height: 42vh;
+    }
+
+    .hero-content {
+        height: 100%;
+
+        padding: 30px;
+    }
+
+    .login-logo img {
+        width: 40px;
+    }
+
+    .hero-message {
+        margin-bottom: 20px;
+
+        max-width: 600px;
+    }
+
+    .hero-message h1 {
+        font-size: clamp(2.5rem, 7vw, 3.5rem);
+
+        letter-spacing: -1px;
+    }
+
+    .hero-message p {
+        margin-top: 12px;
+
+        font-size: 1rem;
+    }
+
+
+    /* LOGIN */
+
+    .login-section {
+        min-height: auto;
+
+        padding: 60px 0;
+    }
+
+    .login-container {
+        width: min(570px, 88%);
+    }
+
+}
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .login-hero {
+        min-height: 300px;
+
+        height: 35vh;
+    }
+
+    .hero-content {
+        padding: 25px 22px;
+    }
+
+    .login-logo img {
+        width: 40px;
+    }
+
+    .hero-message {
+        margin-bottom: 10px;
+    }
+
+    .hero-message h1 {
+        font-size: 2.35rem;
+
+        line-height: 1.02;
+    }
+
+    .hero-message p {
+        margin-top: 10px;
+
+        font-size: 0.9rem;
+
+        line-height: 1.4;
+    }
+
+
+    /* LOGIN */
+
+    .login-section {
+        padding: 45px 0;
+    }
+
+    .login-container {
+        width: 88%;
+    }
+
+    .login-header {
+        margin-bottom: 28px;
+    }
+
+    .login-header h2 {
+        font-size: 1.75rem;
+    }
+
+    .login-header p {
+        font-size: 0.88rem;
+    }
+
+    .form-group {
+        margin-bottom: 34px;
+    }
+
+    .form-group input {
+        height: 58px;
+    }
+
+    .remember-row {
+        margin-bottom: 25px;
+    }
+
+    .signin-btn {
+        height: 58px;
+
+        border-radius: 12px;
+    }
+
+    .social-divider {
+        margin: 28px 0 22px;
+    }
+
+    .social-btn {
+        height: 58px;
+
+        margin-bottom: 20px;
+
+        font-size: 0.9rem;
+    }
+
+    .signup-text {
+        font-size: 0.85rem;
+    }
+
+}
+
+
+
+/* =========================================
+   VERY SMALL DEVICES
+========================================= */
+
+@media (max-width: 360px) {
+
+    .hero-message h1 {
+        font-size: 2rem;
+    }
+
+    .hero-message p {
+        font-size: 0.8rem;
+    }
+
+    .login-header h2 {
+        font-size: 1.55rem;
+    }
+
+    .login-header p {
+        font-size: 0.8rem;
+    }
+
+    .social-btn {
+        gap: 8px;
+
+        font-size: 0.82rem;
+    }
+
+}

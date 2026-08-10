@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Skyway Travel</title>
+
+    <!-- Google Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Login CSS -->
+    <link
+        rel="stylesheet"
+        href="css/login.css">
+
+</head>
+
+
+<body>
+
+
+    <main class="login-page">
+
+
+        <!-- =================================
+             LEFT PROMOTIONAL SECTION
+        ================================== -->
+
+        <section class="login-hero">
+
+
+            <!-- Background overlay -->
+            <div class="hero-overlay"></div>
+
+
+            <div class="hero-content">
+
+
+                <!-- Logo -->
+
+                <a
+                    href="index.html"
+                    class="login-logo">
+                  
+                    <img
+                        src="asset/logo/logo.png"
+                        alt="Skyway Travel Logo">
+                     <h3>Skyway <span>Travel</span></h3>
+                </a>
+
+
+                <!-- Hero Message -->
+
+                <div class="hero-message">
+
+                    <h1>
+
+                        Your journey
+
+                        <span>begins here</span>
+
+                    </h1>
+
+
+                    <p>
+
+                        book flights and amazing
+                        <br>
+                        experiences all in one place.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             RIGHT LOGIN SECTION
+        ================================== -->
+
+        <section class="login-section">
+
+
+            <div class="login-container">
+
+
+                <!-- Heading -->
+
+                <div class="login-header">
+
+                    <h2>Welcome back!</h2>
+
+                    <p>
+                        Sign in to continue your journey
+                    </p>
+
+                </div>
+
+
+
+                <!-- Login Form -->
+
+                <form
+                    class="login-form"
+                    id="loginForm">
+
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required>
+
+                    </div>
+
+
+
+                    <!-- Password -->
+
+                    <div class="form-group password-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required>
+
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="passwordToggle"
+                                aria-label="Show password">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Password helper / forgot password -->
+
+                        <div class="password-footer">
+
+                            <span class="helper-text">
+                                Helper text
+                            </span>
+
+                            <a
+                                href="#"
+                                class="forgot-password">
+
+                                Forgot password?
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Remember Me -->
+
+                    <div class="remember-row">
+
+
+                        <label class="remember-label">
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                                name="rememberMe">
+
+                            <span class="custom-checkbox"></span>
+
+                            <span>
+                                Remember me?
+                            </span>
+
+                        </label>
+
+
+                    </div>
+
+
+
+                    <!-- Sign In Button  -->
+                     <button
+                        type="submit"
+                        class="signin-btn">
+
+                        Sign In
+
+                    </button>
+
+
+               <!-- <a href="dashboard.html" class="signin-btn">
+
+                        Sign In
+
+                    </a> -->
+
+                </form>
+
+
+
+                <!-- =================================
+                     SOCIAL LOGIN DIVIDER
+                ================================== -->
+
+                <div class="social-divider">
+
+                    <span></span>
+
+                    <p>or continue with</p>
+
+                    <span></span>
+
+                </div>
+
+
+
+                <!-- Google Login -->
+
+                <button
+                    type="button"
+                    class="social-btn google-btn">
+
+                    <span class="google-icon">
+
+                        G
+
+                    </span>
+
+                    <span>
+                        Continue with Google
+                    </span>
+
+                </button>
+
+
+
+                <!-- Apple Login -->
+
+                <button
+                    type="button"
+                    class="social-btn apple-btn">
+
+                    <i class="fa-brands fa-apple"></i>
+
+                    <span>
+                        Continue with Apple
+                    </span>
+
+                </button>
+
+
+
+                <!-- Sign Up -->
+
+                <p class="signup-text">
+
+                    <span>
+                        Don’t have an account?
+                    </span>
+
+                    <a href="signup.html">
+                        Sign up
+                    </a>
+
+                </p>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- Login JavaScript -->
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

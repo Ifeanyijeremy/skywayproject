@@ -1,0 +1,541 @@
+/* =========================================
+   RESPONSIVE CHECKOUT SYSTEM
+========================================= */
+
+
+/* =========================================
+   LARGE DESKTOP
+   1200px+
+========================================= */
+
+@media (min-width: 1200px) {
+
+    .checkout-container {
+        width: min(1200px, 92%);
+    }
+
+    .checkout-grid {
+        grid-template-columns: minmax(0, 1.65fr) minmax(360px, 1fr);
+        gap: 28px;
+    }
+
+}
+
+
+/* =========================================
+   LAPTOP
+   901px - 1199px
+========================================= */
+
+@media (min-width: 901px) and (max-width: 1199px) {
+
+    .checkout-container {
+        width: 92%;
+    }
+
+    .checkout-grid {
+        grid-template-columns:
+            minmax(0, 1.5fr)
+            minmax(320px, 0.9fr);
+
+        gap: 20px;
+    }
+
+    .checkout-card {
+        padding: 21px;
+    }
+
+    .payment-options {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .payment-option {
+        font-size: 11px;
+    }
+
+    .route-location strong {
+        font-size: 25px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+   601px - 900px
+========================================= */
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .checkout-page {
+        padding: 28px 0 45px;
+    }
+
+    .checkout-container {
+        width: 92%;
+    }
+
+    /*
+       Everything becomes one column.
+    */
+
+    .checkout-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    /*
+       Keep the cards full width.
+    */
+
+    .checkout-left,
+    .checkout-right {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    /*
+       Passenger form remains two columns
+       because tablets have enough space.
+    */
+
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px 18px;
+    }
+
+
+    /*
+       Payment options can remain in two rows.
+    */
+
+    .payment-options {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+
+    /*
+       Booking route remains horizontal.
+    */
+
+    .flight-route {
+        grid-template-columns:
+            1fr 1.4fr 1fr;
+
+        gap: 15px;
+    }
+
+
+    .route-location strong {
+        font-size: 27px;
+    }
+
+
+    .checkout-card {
+        border-radius: 20px;
+
+        padding: 22px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   401px - 600px
+========================================= */
+
+@media (max-width: 600px) {
+
+    .checkout-page {
+        padding: 20px 0 35px;
+    }
+
+
+    .checkout-container {
+        width: 92%;
+    }
+
+
+    /*
+       Breadcrumb
+    */
+
+    .breadcrumb {
+        width: 100%;
+
+        display: flex;
+
+        gap: 8px;
+
+        margin-bottom: 16px;
+
+        overflow-x: auto;
+
+        white-space: nowrap;
+
+        scrollbar-width: none;
+
+        font-size: 12px;
+    }
+
+    .breadcrumb::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    /*
+       Main layout
+    */
+
+    .checkout-grid {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 16px;
+    }
+
+
+    .checkout-left,
+    .checkout-right {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 16px;
+    }
+
+
+    /*
+       Cards
+    */
+
+    .checkout-card {
+        width: 100%;
+
+        padding: 18px;
+
+        border-radius: 18px;
+    }
+
+
+    .checkout-card h2 {
+        font-size: 16px;
+
+        margin-bottom: 16px;
+    }
+
+
+    /*
+       Forms become one column.
+    */
+
+    .form-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .form-group input {
+        height: 44px;
+
+        font-size: 13px;
+    }
+
+
+    /*
+       Payment methods
+    */
+
+    .payment-options {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 8px;
+    }
+
+
+    .payment-option {
+        width: 100%;
+
+        min-width: 0;
+
+        height: 44px;
+
+        padding: 0 9px;
+
+        font-size: 10px;
+    }
+
+
+    .payment-option .radio {
+        width: 16px;
+        height: 16px;
+    }
+
+
+    .payment-option.active .radio::after {
+        width: 6px;
+        height: 6px;
+
+        top: 3px;
+        left: 3px;
+    }
+
+
+    /*
+       Booking summary
+    */
+
+    .airline-info {
+        gap: 10px;
+    }
+
+
+    .airline-logo {
+        width: 40px;
+        height: 40px;
+
+        flex-shrink: 0;
+    }
+
+
+    .airline-info h3 {
+        font-size: 15px;
+    }
+
+
+    .airline-info p {
+        font-size: 11px;
+    }
+
+
+    /*
+       Flight route
+    */
+
+    .flight-route {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(90px, 1fr)
+            minmax(0, 1fr);
+
+        gap: 7px;
+
+        padding: 15px 0;
+    }
+
+
+    .route-location strong {
+        font-size: 23px;
+    }
+
+
+    .route-location span {
+        font-size: 10px;
+
+        line-height: 1.3;
+    }
+
+
+    .duration {
+        font-size: 10px;
+    }
+
+
+    .route-middle small {
+        font-size: 9px;
+    }
+
+
+    /*
+       Price
+    */
+
+    .price-row {
+        font-size: 12px;
+    }
+
+
+    .total-row > div > strong {
+        font-size: 15px;
+    }
+
+
+    .total-row > strong {
+        font-size: 21px;
+    }
+
+
+    /*
+       Pay button
+    */
+
+    .pay-button {
+        height: 50px;
+
+        font-size: 17px;
+    }
+
+
+    .secure-payment {
+        justify-content: center;
+
+        text-align: center;
+
+        font-size: 10px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+   320px - 400px
+========================================= */
+
+@media (max-width: 400px) {
+
+    .checkout-container {
+        width: 94%;
+    }
+
+
+    .checkout-card {
+        padding: 16px;
+
+        border-radius: 16px;
+    }
+
+
+    .checkout-card h2 {
+        font-size: 15px;
+    }
+
+
+    /*
+       Payment options become
+       completely vertical.
+    */
+
+    .payment-options {
+        grid-template-columns: 1fr;
+    }
+
+
+    .payment-option {
+        height: 43px;
+
+        font-size: 11px;
+    }
+
+
+    /*
+       Flight information stacks
+       vertically.
+    */
+
+    .flight-route {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+    }
+
+
+    .route-location,
+    .route-location.arrival {
+        width: 100%;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .route-location strong {
+        font-size: 24px;
+    }
+
+
+    .route-middle {
+        width: 100%;
+
+        order: 2;
+    }
+
+
+    .passengers {
+        font-size: 11px;
+    }
+
+
+    .price-row {
+        font-size: 11px;
+    }
+
+
+    .total-row > strong {
+        font-size: 19px;
+    }
+
+
+    .pay-button {
+        height: 48px;
+
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL DEVICES
+   Below 320px
+========================================= */
+
+@media (max-width: 319px) {
+
+    .checkout-container {
+        width: 95%;
+    }
+
+
+    .checkout-card {
+        padding: 14px;
+    }
+
+
+    .payment-option {
+        font-size: 10px;
+    }
+
+
+    .form-group label {
+        font-size: 10px;
+    }
+
+
+    .form-group input {
+        font-size: 12px;
+    }
+
+}

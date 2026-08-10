@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | Skyway Travel</title>
+
+    <link rel="stylesheet" href="SEARCHcss/CheckoutCSS/Checkout.css">
+    <link rel="stylesheet" href="SEARCHcss/CheckoutCSS/checkoutresponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/responsive.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="container navbar">
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-btn" aria-label="Toggle navigation">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <!-- Logo -->
+        <a href="#" class="logo">
+
+            <img src="/asset/logo/logo.png" alt="Skyway Travel Logo">
+            <h2>Skyway <span>Travel</span></h2>
+
+        </a>
+
+        <!-- Navigation -->
+        <nav class="nav-links">
+
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Destinations</a>
+            <a href="#">Packages</a>
+            <a href="#">Contact</a>
+
+        </nav>
+
+        <!-- Right Side -->
+        <div class="nav-right">
+
+            <div class="phone">
+
+                <div class="phone-icon">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </div>
+
+                <div>
+
+                    <small>Talk to our support</small>
+                    <span>+234 806 626 5570</span>
+
+                </div>
+
+            </div>
+
+            <a href="#" class="btn">Get Started</a>
+
+        </div>
+
+    </div>
+
+</header>
+<div class="menu-overlay"></div>
+
+    <main class="checkout-page">
+
+        <div class="checkout-container">
+
+            <!-- =========================
+                 BREADCRUMB
+            ========================== -->
+
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+
+                <a href="#">Home</a>
+
+                <span>/</span>
+
+                <a href="#">Flights</a>
+
+                <span>/</span>
+
+                <a href="#">Search Results</a>
+
+                <span>/</span>
+
+                <span class="current">Checkout</span>
+
+            </nav>
+
+
+            <!-- =========================
+                 CHECKOUT GRID
+            ========================== -->
+
+            <div class="checkout-grid">
+
+
+                <!-- =========================
+                     LEFT COLUMN
+                ========================== -->
+
+                <div class="checkout-left">
+
+
+                    <!-- PASSENGER DETAILS -->
+
+                    <section class="checkout-card">
+
+                        <h2>Passenger details</h2>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="firstName">
+                                    FIRST NAME
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="firstName"
+                                    value="Ozioma"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="lastName">
+                                    LAST NAME
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="lastName"
+                                    value="Egole"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="dateOfBirth">
+                                    DATE OF BIRTH
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="dateOfBirth"
+                                    value="12/02/1990"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="nationality">
+                                    NATIONALITY
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="nationality"
+                                    value="Nigeria"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="passportNumber">
+                                    PASSPORT NUMBER
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="passportNumber"
+                                    value="A1234567"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="passportExpiry">
+                                    PASSPORT EXPIRY
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="passportExpiry"
+                                    value="05/2030"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- CONTACT INFORMATION -->
+
+                    <section class="checkout-card contact-card">
+
+                        <h2>Contact information</h2>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    EMAIL ADDRESS
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    value="oziomaegole@gmail.com"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    PHONE NUMBER
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    value="08166365570"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- PAYMENT METHOD -->
+
+                    <section class="checkout-card payment-card">
+
+                        <h2>Payment method</h2>
+
+
+                        <div class="payment-options">
+
+                            <button
+                                type="button"
+                                class="payment-option active"
+                                data-payment="card"
+                            >
+
+                                <span class="radio"></span>
+
+                                <span>Credit / Debit card</span>
+
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="payment-option"
+                                data-payment="bank"
+                            >
+
+                                <span class="radio"></span>
+
+                                <span>Bank Transfer</span>
+
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="payment-option"
+                                data-payment="paypal"
+                            >
+
+                                <span class="radio"></span>
+
+                                <span>Paypal</span>
+
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="payment-option"
+                                data-payment="crypto"
+                            >
+
+                                <span class="radio"></span>
+
+                                <span>Crypto</span>
+
+                            </button>
+
+                        </div>
+
+
+
+                        <!-- CARD PAYMENT -->
+
+                        <div class="card-payment-form">
+
+                            <div class="form-group full-width">
+
+                                <label for="cardNumber">
+                                    CARD NUMBER
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="cardNumber"
+                                    value="4242 4242 4242 4242"
+                                >
+
+                            </div>
+
+
+                            <div class="form-grid">
+
+                                <div class="form-group">
+
+                                    <label for="expiryDate">
+                                        EXPIRY DATE
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="expiryDate"
+                                        value="08/29"
+                                    >
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="cvv">
+                                        CVV
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="cvv"
+                                        value="123"
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group full-width">
+
+                                <label for="cardName">
+                                    NAME ON CARD
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="cardName"
+                                    value="OZIOMA EGOLE"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+
+                <!-- =========================
+                     RIGHT COLUMN
+                ========================== -->
+
+                <aside class="checkout-right">
+
+
+                    <!-- BOOKING SUMMARY -->
+
+                    <section class="checkout-card booking-summary">
+
+                        <h2>Booking summary</h2>
+
+
+                        <div class="airline-info">
+
+                            <div class="airline-logo">
+                                AF
+                            </div>
+
+                            <div>
+
+                                <h3>Air France</h3>
+
+                                <p>
+                                    Flight AF1082 · Economy
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="flight-route">
+
+                            <div class="route-location">
+
+                                <strong>10:20</strong>
+
+                                <span>Lagos (LOS)</span>
+
+                            </div>
+
+
+                            <div class="route-middle">
+
+                                <span class="duration">
+                                    6h 40m
+                                </span>
+
+                                <div class="route-line">
+
+                                    <span></span>
+
+                                    <div></div>
+
+                                    <span></span>
+
+                                </div>
+
+                                <small>
+                                    Nonstop
+                                </small>
+
+                            </div>
+
+
+                            <div class="route-location arrival">
+
+                                <strong>15:00</strong>
+
+                                <span>Paris (CDG)</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="passengers">
+
+                            <span>Passengers</span>
+
+                            <strong>1 Adult</strong>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- PRICE BREAKDOWN -->
+
+                    <section class="checkout-card price-card">
+
+                        <h2>Price breakdown</h2>
+
+
+                        <div class="price-row">
+
+                            <span>Base fare</span>
+
+                            <strong>$398.00</strong>
+
+                        </div>
+
+
+                        <div class="price-row">
+
+                            <span>Taxes &amp; fees</span>
+
+                            <strong>$52.00</strong>
+
+                        </div>
+
+
+                        <div class="price-row">
+
+                            <span>Service fee</span>
+
+                            <strong>$0.00</strong>
+
+                        </div>
+
+
+                        <div class="price-divider"></div>
+
+
+                        <div class="total-row">
+
+                            <div>
+
+                                <strong>Total</strong>
+
+                                <small>
+                                    per traveler, round trip
+                                </small>
+
+                            </div>
+
+                            <strong>$450.00</strong>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="pay-button"
+                            id="payButton"
+                        >
+                            Pay Now
+                        </button>
+
+
+                        <div class="secure-payment">
+
+                            <span class="secure-icon">✓</span>
+
+                            <span>
+                                Secure payment · Best price guarantee
+                            </span>
+
+                        </div>
+
+                    </section>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!--================ FOOTER ================-->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- Logo -->
+
+            <div class="footer-about">
+
+                <img
+                    src="/asset/logo/logo.png"
+                    alt="Skyway Travel Logo"
+                    class="footer-logo">
+
+                <p>
+                    Elevating your travel experience with the best
+                    deals, trusted service and unforgettable journeys.
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+
+                </div>
+
+            </div>
+
+            <!-- Navigation -->
+
+            <div>
+
+                <h4>Navigation</h4>
+
+                <ul>
+
+                    <li><a href="#">About Us</a></li>
+
+                    <li><a href="#">Services</a></li>
+
+                    <li><a href="#">Destinations</a></li>
+
+                    <li><a href="#">Packages</a></li>
+
+                    <li><a href="#">Cruises</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Support -->
+
+            <div>
+
+                <h4>Support</h4>
+
+                <ul>
+
+                    <li><a href="#">Help Center</a></li>
+
+                    <li><a href="#">FAQ</a></li>
+
+                    <li><a href="#">Booking Guide</a></li>
+
+                    <li><a href="#">Payment</a></li>
+
+                    <li><a href="#">Terms & Conditions</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Company -->
+
+            <div>
+
+                <h4>Company</h4>
+
+                <ul>
+
+                    <li><a href="#">About Us</a></li>
+
+                    <li><a href="#">Careers</a></li>
+
+                    <li><a href="#">Blog</a></li>
+
+                    <li><a href="#">Press</a></li>
+
+                    <li><a href="#">Contact Us</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom-content">
+
+            <p>©2026 Skyway Travel. All Rights Reserved.</p>
+
+            <div class="footer-links">
+
+                <a href="#">Privacy Policy</a>
+
+                <a href="#">Terms of Use</a>
+
+                <a href="#">Cookie Policy</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+    <script src="JS/checkout.js"></script>
+    <script src="JS/navbar.js"></script>
+
+</body>
+</html>

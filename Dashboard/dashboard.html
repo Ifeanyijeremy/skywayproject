@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skyway Travel | Dashboard</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="/Dashboard/dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- =========================================
+             SIDEBAR
+        ========================================== -->
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-top">
+
+                <!-- Logo -->
+                <a href="../index.html" class="dashboard-logo">
+                    <img
+                        src="../asset/logo/logo.png"
+                        alt="Skyway Travel"
+                    >
+                </a>
+
+                <!-- Navigation -->
+                <nav class="dashboard-nav">
+
+                    <a href="#" class="nav-link active">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Overview</span>
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <!-- Sidebar Bottom -->
+            <div class="sidebar-bottom">
+
+                <p class="sidebar-message">
+                    Let’s explore<br>
+                    the world together
+                </p>
+
+                <div class="sidebar-illustration">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <i class="fa-solid fa-plane-arrival"></i>
+
+                    <div class="route-line"></div>
+
+                    <i class="fa-solid fa-location-dot location-one"></i>
+                    <i class="fa-solid fa-location-dot location-two"></i>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================================
+             MAIN DASHBOARD
+        ========================================== -->
+
+        <main class="dashboard-main">
+
+            <!-- Top Bar -->
+            <header class="dashboard-header">
+
+                <button
+                    class="mobile-menu-btn"
+                    id="mobileMenuBtn"
+                    aria-label="Open dashboard menu"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+
+                      <!-- Breadcrumb -->
+                      <div class="breadcrumb">
+
+          <i class="fa-solid fa-grip"></i>
+
+          <span>Overview</span>
+
+           </div>
+                <!-- User -->
+                <div class="user-profile">
+
+                    <img
+                        src="../asset/images/user2.jpg"
+                        alt="Daniel Mark"
+                    >
+
+                    <div class="user-details">
+                        <strong>Daniel Mark</strong>
+                        <span>Premium Traveler</span>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =====================================
+                 PAGE CONTENT
+            ====================================== -->
+
+            <div class="dashboard-content">
+
+
+                <!-- Welcome -->
+                <section class="welcome-section">
+
+                    <h1>Good morning John!</h1>
+
+                    <p>
+                        where will your next adventure take you?
+                    </p>
+
+                </section>
+
+
+                <!-- =================================
+                     STATISTICS
+                ================================== -->
+
+                <section class="stats-grid">
+
+                    <!-- Upcoming Trips -->
+                    <article class="stat-card">
+
+                        <div class="stat-icon">
+                            <i class="fa-regular fa-calendar"></i>
+                        </div>
+
+                        <div class="stat-info">
+                            <span>Upcoming Trips</span>
+                            <strong>02</strong>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Countries Visited -->
+                    <article class="stat-card">
+
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+
+                        <div class="stat-info">
+                            <span>Countries Visited</span>
+                            <strong>05</strong>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Loyalty Points -->
+                    <article class="stat-card">
+
+                        <div class="stat-icon">
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="stat-info">
+                            <span>Loyalty points</span>
+                            <strong>2,450</strong>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Total Bookings -->
+                    <article class="stat-card">
+
+                        <div class="stat-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+
+                        <div class="stat-info">
+                            <span>Total Bookings</span>
+                            <strong>08</strong>
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- =================================
+                     UPCOMING TRIP
+                ================================== -->
+
+                <section class="upcoming-section">
+
+                    <h2 class="section-title">
+                        Next Upcoming Trip
+                    </h2>
+
+
+                    <div class="upcoming-trip">
+
+                        <!-- Destination Image -->
+                        <div class="trip-image">
+
+                            <img
+                                src="../asset/images/london.jpg"
+                                alt="London England"
+                            >
+
+                        </div>
+
+
+                        <!-- Trip Details -->
+                        <div class="trip-details">
+
+                            <div class="trip-heading">
+
+                                <div>
+                                    <h3>Paris, France</h3>
+
+                                    <p class="trip-date">
+                                        12 May - 20 May, 2025
+                                    </p>
+
+                                    <p class="flight-info">
+                                        <strong>Air France</strong>
+                                        <span>·</span>
+                                        AF 943
+                                    </p>
+                                </div>
+
+                                <span class="confirmed">
+                                    Confirmed
+                                </span>
+
+                            </div>
+
+
+                            <!-- Flight Information -->
+                            <div class="flight-details">
+
+                                <div class="flight-detail">
+                                    <span>Terminal</span>
+                                    <strong>T2</strong>
+                                </div>
+
+                                <div class="flight-detail">
+                                    <span>Gate</span>
+                                    <strong>14B</strong>
+                                </div>
+
+                                <div class="flight-detail">
+                                    <span>Seat</span>
+                                    <strong>24A</strong>
+                                </div>
+
+                                <div class="flight-detail">
+                                    <span>Booking ID</span>
+                                    <strong>SWTR-2025-57839</strong>
+                                </div>
+
+                            </div>
+
+
+                            <!-- Trip Actions -->
+                            <div class="trip-actions">
+
+                                <a href="#" class="btn btn-primary">
+                                    Get Started
+                                </a>
+
+                                <a href="#" class="btn btn-outline">
+                                    Download Ticket
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================
+                     QUICK ACTIONS
+                ================================== -->
+
+                <section class="quick-actions-section">
+
+                    <h2 class="section-title">
+                        Quick Actions
+                    </h2>
+
+
+                    <div class="quick-actions-grid">
+
+                        <!-- Book -->
+                        <a href="#" class="quick-action">
+
+                            <div class="quick-action-icon">
+                                <i class="fa-regular fa-calendar"></i>
+                            </div>
+
+                            <div>
+                                <h3>Book New Trip</h3>
+                                <p>Flights, hotels & packages</p>
+                            </div>
+
+                        </a>
+
+
+                        <!-- Explore -->
+                        <a href="#" class="quick-action">
+
+                            <div class="quick-action-icon">
+                                <i class="fa-regular fa-calendar"></i>
+                            </div>
+
+                            <div>
+                                <h3>Explore Destinations</h3>
+                                <p>Find your next adventure</p>
+                            </div>
+
+                        </a>
+
+
+                        <!-- Tickets -->
+                        <a href="#" class="quick-action">
+
+                            <div class="quick-action-icon">
+                                <i class="fa-regular fa-calendar"></i>
+                            </div>
+
+                            <div>
+                                <h3>Download Tickets</h3>
+                                <p>Access your documents</p>
+                            </div>
+
+                        </a>
+
+
+                        <!-- Support -->
+                        <a href="#" class="quick-action">
+
+                            <div class="quick-action-icon">
+                                <i class="fa-regular fa-calendar"></i>
+                            </div>
+
+                            <div>
+                                <h3>Get Support</h3>
+                                <p>We’re here to help</p>
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================
+                     POPULAR DESTINATIONS
+                ================================== -->
+
+                <section class="destinations-section">
+
+                    <div class="section-heading">
+
+                        <h2>Popular Destinations</h2>
+
+                        <p>
+                            Discover trending places loved by travelers worldwide
+                        </p>
+
+                    </div>
+
+
+                    <div class="destinations-grid">
+
+                        <!-- Bangkok -->
+                        <article class="destination-card">
+
+                            <img
+                                src="../asset/images/thailand.jpg"
+                                alt="Bangkok Thailand"
+                            >
+
+                            <button
+                                class="favorite-btn"
+                                aria-label="Add Bangkok to favorites"
+                            >
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <div class="destination-overlay">
+
+                                <h3>
+                                    Bangkok,<br>
+                                    Thailand
+                                </h3>
+
+                                <span>
+                                    From $450
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Cape Town -->
+                        <article class="destination-card">
+
+                            <img
+                                src="../asset/images/capetown.jpg"
+                                alt="Cape Town South Africa"
+                            >
+
+                            <button
+                                class="favorite-btn"
+                                aria-label="Add Cape Town to favorites"
+                            >
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <div class="destination-overlay">
+
+                                <h3>
+                                    Cape Town,<br>
+                                    South Africa
+                                </h3>
+
+                                <span>
+                                    From $680
+                                </span>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Dubai -->
+                        <article class="destination-card">
+
+                            <img
+                                src="../asset/images/dubai.jpg"
+                                alt="Dubai UAE"
+                            >
+
+                            <button
+                                class="favorite-btn"
+                                aria-label="Add Dubai to favorites"
+                            >
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <div class="destination-overlay">
+
+                                <h3>
+                                    Dubai, UAE
+                                </h3>
+
+                                <span>
+                                    From $550
+                                </span>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- Dashboard JavaScript -->
+    <script src="dashboard.js"></script>
+
+</body>
+</html>

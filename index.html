@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skyway Travel</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/animation.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-btn" aria-label="Toggle navigation">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <!-- Logo -->
+        <a href="#" class="logo">
+
+            <img src="/asset/logo/logo.png" alt="Skyway Travel Logo">
+            <h2>Skyway <span>Travel</span></h2>
+
+        </a>
+
+        <!-- Navigation -->
+        <nav class="nav-links">
+
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Destinations</a>
+            <a href="#">Packages</a>
+            <a href="#">Contact</a>
+
+        </nav>
+
+        <!-- Right Side -->
+        <div class="nav-right">
+
+            <div class="phone">
+
+                <div class="phone-icon">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </div>
+
+                <div>
+
+                    <small>Talk to our support</small>
+                    <span>+234 806 626 5570</span>
+
+                </div>
+
+            </div>
+
+            <a href="login.html" class="btn">Get Started</a>
+
+        </div>
+
+    </div>
+
+</header>
+
+<div class="menu-overlay"></div>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <h1>
+
+                Your Journey.<br>
+
+                <span><i>Elevated.</i></span>
+
+            </h1>
+
+            <p class="hero-description">
+
+                Discover unforgettable destinations, exclusive travel
+                packages and premium experiences designed for modern
+                explorers around the world.
+
+            </p>
+
+            <!-- Rating Card -->
+
+            <div class="rating-card">
+
+                <div class="avatars">
+
+                    <img src="/asset/images/avatar1.jpg" alt="Traveller">
+
+                    <img src="/asset/images/avatar2.jpg" alt="Traveller">
+
+                    <img src="/asset/images/avatar3.jpg" alt="Traveller">
+
+                </div>
+
+                <div>
+
+                    <h4>Trusted by 25,000+ travellers</h4>
+
+                    <p>
+
+                        ⭐⭐⭐⭐⭐ 4.9 Rating
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ SEARCH CARD ================-->
+
+
+<section class="booking-search">
+
+    <div class="container">
+
+        <div class="search-card">
+
+            <!-- From -->
+
+            <div class="search-field">
+
+    <label for="from">From</label>
+
+    <div class="select-wrapper">
+
+        <i class="fa-solid fa-plane-departure"></i>
+
+        <select id="from">
+
+            <option>Lagos (LOS)</option>
+            <option>Abuja (ABV)</option>
+            <option>Port Harcourt (PHC)</option>
+            <option>Accra (ACC)</option>
+
+        </select>
+
+    </div>
+
+</div>
+
+            <!-- Swap -->
+
+            <button class="swap-btn" aria-label="Swap destinations">
+
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+            </button>
+
+            <!-- To -->
+
+           <div class="search-field">
+
+    <label for="to">To</label>
+
+    <div class="select-wrapper">
+
+        <i class="fa-solid fa-plane-arrival"></i>
+
+        <select id="to">
+
+            <option>Paris (CDG)</option>
+            <option>Dubai (DXB)</option>
+            <option>Maldives (MLE)</option>
+            <option>London (LHR)</option>
+            <option>Tokyo (HND)</option>
+
+        </select>
+
+    </div>
+
+</div>
+
+            <!-- Departure -->
+
+            <div class="search-field">
+
+                <label>Departure</label>
+
+                <input type="date">
+
+            </div>
+
+            <!-- Return -->
+
+            <div class="search-field">
+
+                <label>Return</label>
+
+                <input type="date">
+
+            </div>
+
+            <!-- Button -->
+
+            <button class="search-btn">
+
+                Search
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!--================ INFO CARDS =================-->
+
+<section class="info-section">
+
+    <div class="container">
+
+        <div class="info-grid">
+
+            <!-- Card 1 -->
+
+    <article class="info-card">
+
+    <div class="card-image">
+
+        <img src="/asset/images/destination.jpg"
+             alt="Explore Destinations">
+
+        <div class="card-overlay">
+
+            <h3>Explore Destinations</h3>
+
+            <p>Explore the world's most breathtaking places.</p>
+
+        </div>
+
+    </div>
+
+</article>
+
+            <!-- Card 2 -->
+
+            <div class="info-card">
+
+                <h3>Travel Categories</h3>
+
+                <!-- <p>
+
+                    Find trips tailored to every travel style.
+
+                </p> -->
+
+                <div class="chips">
+
+                    <span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Adventure
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Beach
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Luxury
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Family
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Nature
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Cities
+                    </span>
+
+                </div>
+
+                <a href="#" class="view-all">
+
+                    View all categories
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="info-card">
+
+                <h3>Why Choose Skyway</h3>
+
+                <ul>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Best Price Guarantee
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Secure Booking
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Handpicked Experiences
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        24/7 Customer Support
+
+                    </li>
+
+                </ul>
+
+                <img
+                    src="/asset/images/airolane.jpg"
+                    alt="airplane"
+                    class="plane-image">
+
+
+                <img
+                    src="/asset/images/passport.png"
+                    alt="passport"
+                    class="info-image">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ POPULAR DESTINATIONS ================-->
+
+<section class="destinations">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div>
+
+                <p class="section-tag">
+                    Popular Places
+                </p>
+
+                <h2>
+                    Popular Destinations
+                </h2>
+
+            </div>
+
+            <a href="#" class="view-all">
+
+                View All
+
+                <i class="fa-solid fa-arrow-right-long"></i>
+
+            </a>
+
+        </div>
+
+        <div class="destination-grid">
+
+            <!-- CARD 1 -->
+
+            <div class="destination-card">
+
+                <div class="destination-image">
+
+                    <img src="/asset/images/thailand.jpg" alt="Paris">
+
+                    <button class="favorite">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                    <span class="price">
+
+                        From $890
+
+                    </span>
+
+                </div>
+
+                <div class="destination-content">
+
+                    <div>
+
+                        <h3>Paris</h3>
+
+                        <p>France</p>
+
+                    </div>
+
+                    <div class="rating">
+
+                        ⭐ 4.9
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="destination-card">
+
+                <div class="destination-image">
+
+                    <img src="/asset/images/capetown.jpg" alt="Maldives">
+
+                    <button class="favorite">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                    <span class="price">
+
+                        From $1450
+
+                    </span>
+
+                </div>
+
+                <div class="destination-content">
+
+                    <div>
+
+                        <h3>Maldives</h3>
+
+                        <p>Indian Ocean</p>
+
+                    </div>
+
+                    <div class="rating">
+
+                        ⭐ 5.0
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="destination-card">
+
+                <div class="destination-image">
+
+                    <img src="/asset/images/dubai.jpg" alt="Dubai">
+
+                    <button class="favorite">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                    <span class="price">
+
+                        From $980
+
+                    </span>
+
+                </div>
+
+                <div class="destination-content">
+
+                    <div>
+
+                        <h3>Dubai</h3>
+
+                        <p>United Arab Emirates</p>
+
+                    </div>
+
+                    <div class="rating">
+
+                        ⭐ 4.8
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 4 -->
+
+            <div class="destination-card">
+
+                <div class="destination-image">
+
+                    <img src="/asset/images/london.jpg" alt="Japan">
+
+                    <button class="favorite">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                    <span class="price">
+
+                        From $1100
+
+                    </span>
+
+                </div>
+
+                <div class="destination-content">
+
+                    <div>
+
+                        <h3>Kyoto</h3>
+
+                        <p>Japan</p>
+
+                    </div>
+
+                    <div class="rating">
+
+                        ⭐ 4.9
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ TESTIMONIALS ================-->
+
+<section class="testimonials">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-tag">We're Here To Help You Plan The Perfect Trip
+
+            </p>
+
+            <h2>Loved by travellers worldwide</h2>
+
+            <p class="section-description">
+
+                Thousands of happy travellers trust Skyway to
+                create unforgettable travel experiences.
+
+            </p>
+
+        </div>
+
+
+        <div class="testimonial-grid">
+
+            <!-- Card 1 -->
+
+            <div class="testimonial-card">
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+                <p class="review">
+
+                    "Booking through Skyway was effortless.
+                    Everything from the hotel to airport transfers
+                    exceeded my expectations."
+
+                </p>
+
+                <div class="user">
+
+                    <img src="/asset/images/user1.jpg" alt="Sarah">
+
+                    <div>
+
+                        <h4>Sarah Johnson</h4>
+
+                        <span>London, UK</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="testimonial-card">
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+                <p class="review">
+
+                    "The Maldives package was worth every penny.
+                    Excellent service and amazing communication."
+
+                </p>
+
+                <div class="user">
+
+                    <img src="/asset/images/user2.jpg" alt="Michael">
+
+                    <div>
+
+                        <h4>Michael Brown</h4>
+
+                        <span>Toronto, Canada</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="testimonial-card">
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+                <p class="review">
+
+                    "I felt completely taken care of from booking
+                    until I returned home. Highly recommended."
+
+                </p>
+
+                <div class="user">
+
+                    <img src="/asset/images/user3.jpg" alt="Sophia">
+
+                    <div>
+
+                        <h4>Sophia Wilson</h4>
+
+                        <span>Sydney, Australia</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ FAQ ================-->
+
+<section class="faq">
+
+    <div class="container">
+
+        <div class="faq-wrapper">
+
+            <!-- Left Side -->
+
+            <div class="faq-left">
+
+                <div class="faq-title">
+
+                    <span class="faq-dot"></span>
+
+                    <span>FAQs (COMMON QUESTIONS)</span>
+
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="faq-right">
+
+                <div class="faq-item active">
+
+                    <button class="faq-question">
+
+                        <span>How do I book a flight on Skyway Travel?</span>
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Simply search for your destination,
+                            choose your preferred flight,
+                            complete your payment and receive
+                            your ticket instantly via email.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+
+                        <span>Can I change or cancel my booking?</span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Most bookings can be modified or
+                            cancelled depending on the airline
+                            or package selected.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+
+                        <span>What payment methods are accepted?</span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            We accept Visa, Mastercard,
+                            PayPal and secure bank transfers.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+
+                        <span>When will I receive my ticket?</span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Your booking confirmation and
+                            e-ticket are usually sent
+                            immediately after payment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ PROMO PACKAGE =================-->
+
+<section class="promo">
+
+    <div class="container">
+
+        <div class="promo-card">
+
+            <!-- LEFT COLUMN -->
+
+            <div class="promo-left">
+
+                <div class="promo-item">
+
+                    <div class="promo-icon">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+
+                    <div>
+                        <h4>Best Price</h4>
+                        <p>Guaranteed value on every booking.</p>
+                    </div>
+
+                </div>
+
+                <div class="promo-item">
+
+                    <div class="promo-icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+
+                    <div>
+                        <h4>Secure Booking</h4>
+                        <p>Safe and protected online payments.</p>
+                    </div>
+
+                </div>
+
+                <div class="promo-item">
+
+                    <div class="promo-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <div>
+                        <h4>24/7 Support</h4>
+                        <p>Travel experts are always available.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CENTER -->
+
+            <div class="promo-image">
+
+                <img src="/asset/images/maldives.jpg"
+                     alt="Luxury Maldives Resort">
+
+                <span class="promo-badge">
+                    Featured
+                </span>
+
+                <div class="promo-overlay">
+
+                    <div>
+
+                        <h3>Maldives Escape</h3>
+
+                        <span>5 Days • 4 Nights</span>
+
+                    </div>
+
+                    <div class="promo-price">
+
+                        From
+
+                        <strong>$1450</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="promo-right">
+
+                <h3>Package Includes</h3>
+
+                <div class="service">
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Flight Booking
+
+                </div>
+
+                <div class="service">
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Luxury Hotel
+
+                </div>
+
+                <div class="service">
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Airport Transfer
+
+                </div>
+
+                <div class="service">
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Daily Breakfast
+
+                </div>
+
+                <div class="service">
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Travel Insurance
+
+                </div>
+
+                <a href="#" class="promo-btn">
+
+                    More
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ CONTACT =================-->
+
+<section class="contact">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+                Plan Your Next Adventure
+            </h2>
+
+            <p class="section-tag">
+                We're here to help you plan the perfect trip.
+            </p>
+
+        </div>
+
+        <div class="contact-grid">
+
+            <!-- Contact Card -->
+
+            <div class="contact-card">
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <div>
+
+                        <h4>Call Us</h4>
+
+                        <p>+234 (0) 816 636 5570 <br><span class="call-span">Mon-Fri, 9AM - 6PM</span></p>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+
+                        <h4>Email</h4>
+
+                        <p>info@skyway.com <br><span class="email-span">
+                            We reply within 24 hours
+                        </span></p>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+
+                        <h4>Office</h4>
+
+                        <p>
+                            123 Healthy Inc.<br>
+                            Asaba, Delta State
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+
+                </div>
+
+            </div>
+
+<div class="map-card">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.312512340345!2d7.493151573562702!3d6.459455293532075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044a3c765c97321%3A0xc41dd720f99cf06a!2sShoprite%20Enugu!5e1!3m2!1sen!2sng!4v1785820000784!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+</div>
+
+            <!-- Form -->
+
+            <div class="form-card">
+
+                <form>
+
+                    <div class="input-group">
+
+                        <input
+                            type="text"
+                            placeholder="Full Name">
+
+                        <input
+                            type="email"
+                            placeholder="Email Address">
+
+                    </div>
+
+                    <select name="destination" id="destination">
+
+    <option value="" selected disabled>
+        Select Destination
+    </option>
+
+    <option value="maldives">Maldives</option>
+    <option value="paris">Paris, France</option>
+    <option value="dubai">Dubai, UAE</option>
+    <option value="bali">Bali, Indonesia</option>
+    <option value="santorini">Santorini, Greece</option>
+    <option value="kyoto">Kyoto, Japan</option>
+    <option value="cape-town">Cape Town, South Africa</option>
+    <option value="new-york">New York, USA</option>
+
+</select>
+
+                    <input
+                        type="date">
+
+                    <button>
+
+                        Send Inquiry
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ FOOTER ================-->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- Logo -->
+
+            <div class="footer-about">
+
+                <img
+                    src="/asset/logo/logo.png"
+                    alt="Skyway Travel Logo"
+                    class="footer-logo">
+
+                <p>
+                    Elevating your travel experience with the best
+                    deals, trusted service and unforgettable journeys.
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+
+                </div>
+
+            </div>
+
+            <!-- Navigation -->
+
+            <div>
+
+                <h4>Navigation</h4>
+
+                <ul>
+
+                    <li><a href="#">About Us</a></li>
+
+                    <li><a href="#">Services</a></li>
+
+                    <li><a href="#">Destinations</a></li>
+
+                    <li><a href="#">Packages</a></li>
+
+                    <li><a href="#">Cruises</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Support -->
+
+            <div>
+
+                <h4>Support</h4>
+
+                <ul>
+
+                    <li><a href="#">Help Center</a></li>
+
+                    <li><a href="#">FAQ</a></li>
+
+                    <li><a href="#">Booking Guide</a></li>
+
+                    <li><a href="#">Payment</a></li>
+
+                    <li><a href="#">Terms & Conditions</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Company -->
+
+            <div>
+
+                <h4>Company</h4>
+
+                <ul>
+
+                    <li><a href="#">About Us</a></li>
+
+                    <li><a href="#">Careers</a></li>
+
+                    <li><a href="#">Blog</a></li>
+
+                    <li><a href="#">Press</a></li>
+
+                    <li><a href="#">Contact Us</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom-content">
+
+            <p>©2026 Skyway Travel. All Rights Reserved.</p>
+
+            <div class="footer-links">
+
+                <a href="#">Privacy Policy</a>
+
+                <a href="#">Terms of Use</a>
+
+                <a href="#">Cookie Policy</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="/JS/app.js"></script>
+<script src="/JS/navbar.js"></script>
+
+</body>
+</html>
