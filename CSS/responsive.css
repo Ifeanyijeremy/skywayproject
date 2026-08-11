@@ -12,9 +12,93 @@
 
     .nav-right{
 
-        display:none;
-
+        display:flex;
+        flex-direction: column;
+        margin: 0;
     }
+
+    .phone{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    color:#fff;
+}
+
+.phone-icon{
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    display:grid;
+
+    place-items:left;
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.phone small{
+
+    display:block;
+
+    font-size:.30rem;
+
+    opacity:.75;
+
+}
+
+.phone span{
+
+    font-size:.30rem;
+
+    font-weight:400;
+
+}
+
+.phone small{
+
+    display:block;
+
+    font-size:.30rem;
+
+    opacity:.75;
+
+}
+
+.phone span{
+
+    font-size:.35rem;
+
+    font-weight:400;
+
+}
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding: 3px 3px;
+
+    border-radius:6px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-weight:400;
+
+    transition:.35s;
+    margin-top: -15px;
+
+}
+
 
     /* Center Logo */
 
