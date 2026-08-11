@@ -1936,6 +1936,22 @@ FOOTER
 
 }
 
+.footer-about {
+   position: relative;
+}
+
+.footer-about h3 {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+}
+
+.footer-about h3 span {
+    font-size: .70rem;
+    color: var(--amber);
+    font-weight: 400px;
+}
+
 .footer-about p{
 
     color:rgba(255,255,255,.75);
