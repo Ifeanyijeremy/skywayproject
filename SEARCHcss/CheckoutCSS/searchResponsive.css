@@ -1,0 +1,526 @@
+/* =========================================================
+   SKYWAY FLIGHT RESULTS — RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* =========================================================
+   LARGE LAPTOP / DESKTOP
+   1200px and below
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .container {
+        width: min(1100px, 92%);
+    }
+
+    .search-summary-card {
+        gap: 18px;
+        padding: 22px;
+    }
+
+    .summary-field {
+        min-width: 130px;
+    }
+
+    .results-grid {
+        grid-template-columns: 240px minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .flight-card {
+        gap: 18px;
+    }
+
+}
+
+/* =========================================================
+   LAPTOP
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    .container {
+        width: 92%;
+    }
+
+
+    /* =========================
+       SEARCH SUMMARY
+       ========================= */
+
+    .search-summary-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+
+    .summary-field {
+        min-width: 0;
+    }
+
+    .modify-btn {
+        width: 100%;
+    }
+
+
+    /* =========================
+       RESULTS HEADER
+       ========================= */
+
+    .results-top {
+        gap: 20px;
+    }
+
+
+    /* =========================
+       RESULTS GRID
+       ========================= */
+
+    .results-grid {
+        grid-template-columns: 220px minmax(0, 1fr);
+        gap: 18px;
+    }
+
+
+    /* =========================
+       FLIGHT CARD
+       ========================= */
+
+    .flight-card {
+        grid-template-columns: 130px minmax(220px, 1fr) 100px 110px;
+        gap: 12px;
+        padding: 18px;
+    }
+
+    .airline-info h4 {
+        font-size: 14px;
+    }
+
+    .departure h3,
+    .arrival h3 {
+        font-size: 20px;
+    }
+
+    .price h2 {
+        font-size: 20px;
+    }
+
+    .book-btn {
+        width: 100%;
+        padding: 10px 12px;
+    }
+
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* =========================
+       CONTAINER
+       ========================= */
+
+    .container {
+        width: 92%;
+    }
+
+
+    /* =========================
+       BREADCRUMB
+       ========================= */
+
+    .breadcrumb {
+        font-size: 13px;
+    }
+
+
+    /* =========================
+       SEARCH SUMMARY
+       ========================= */
+
+    .search-summary-card {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+
+    /* =========================
+       RESULTS HEADER
+       ========================= */
+
+    .results-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .results-title h2 {
+        font-size: 24px;
+    }
+
+    .sort-wrapper {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .sort-buttons {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+
+    /* =========================
+       MAIN RESULTS
+       ========================= */
+
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =========================
+       FILTER
+       ========================= */
+
+    .filter-sidebar {
+        width: 100%;
+    }
+
+    .filter-card {
+        width: 100%;
+    }
+
+
+    /* =========================
+       FLIGHT CARD
+       ========================= */
+
+    .flight-card {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .airline {
+        grid-column: 1 / -1;
+    }
+
+    .flight-info {
+        grid-column: 1 / -1;
+    }
+
+    .baggage {
+        grid-column: 1;
+    }
+
+    .price {
+        grid-column: 2;
+        text-align: right;
+    }
+
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+    }
+
+
+    /* =========================
+       BREADCRUMB
+       ========================= */
+
+    .breadcrumb-section {
+        padding: 18px 0;
+    }
+
+
+    /* =========================
+       SEARCH SUMMARY
+       ========================= */
+
+    .search-summary-card {
+        grid-template-columns: 1fr;
+        padding: 18px;
+        gap: 16px;
+    }
+
+    .summary-field {
+        width: 100%;
+    }
+
+    .modify-btn {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+
+    /* =========================
+       RESULTS HEADER
+       ========================= */
+
+    .results-title h2 {
+        font-size: 22px;
+    }
+
+    .results-title p {
+        font-size: 13px;
+    }
+
+    .sort-wrapper {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sort-buttons {
+        width: 100%;
+    }
+
+    .sort-btn {
+        flex: 0 0 auto;
+    }
+
+
+    /* =========================
+       FILTER
+       ========================= */
+
+    .filter-card {
+        padding: 18px;
+    }
+
+
+    /* =========================
+       FLIGHT CARD
+       ========================= */
+
+    .flight-card {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 18px;
+    }
+
+
+    .airline {
+        grid-column: auto;
+    }
+
+
+    .flight-info {
+        grid-column: auto;
+
+        display: grid;
+        grid-template-columns: 1fr 1.4fr 1fr;
+        align-items: center;
+        gap: 8px;
+    }
+
+
+    .departure,
+    .arrival {
+        text-align: center;
+    }
+
+
+    .departure h3,
+    .arrival h3 {
+        font-size: 21px;
+    }
+
+
+    .route {
+        min-width: 0;
+    }
+
+
+    .duration {
+        font-size: 12px;
+    }
+
+
+    .baggage {
+        grid-column: auto;
+        padding-top: 4px;
+    }
+
+
+    .price {
+        grid-column: auto;
+        text-align: left;
+
+        border-top: 1px solid #eee;
+        padding-top: 16px;
+    }
+
+
+    .book-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+    /* =========================
+       FEATURES
+       ========================= */
+
+    .flight-features {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+}
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 92%;
+    }
+
+
+    /* =========================
+       SEARCH SUMMARY
+       ========================= */
+
+    .search-summary-card {
+        border-radius: 14px;
+        padding: 16px;
+    }
+
+
+    .summary-field {
+        gap: 10px;
+    }
+
+
+    .summary-field i {
+        width: 34px;
+        height: 34px;
+        font-size: 13px;
+    }
+
+
+    .summary-field .label {
+        font-size: 11px;
+    }
+
+
+    .summary-field p {
+        font-size: 14px;
+    }
+
+
+    /* =========================
+       RESULTS TITLE
+       ========================= */
+
+    .results-title h2 {
+        font-size: 20px;
+    }
+
+
+    /* =========================
+       SORT
+       ========================= */
+
+    .sort-btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+
+    /* =========================
+       FILTER
+       ========================= */
+
+    .filter-header h3 {
+        font-size: 18px;
+    }
+
+
+    .filter-group h4 {
+        font-size: 14px;
+    }
+
+
+    /* =========================
+       FLIGHT CARD
+       ========================= */
+
+    .flight-card {
+        padding: 16px;
+        border-radius: 14px;
+    }
+
+
+    .airline-logo {
+        width: 42px;
+        height: 42px;
+        font-size: 14px;
+    }
+
+
+    .airline-info h4 {
+        font-size: 14px;
+    }
+
+
+    .cabin {
+        font-size: 11px;
+    }
+
+
+    .flight-info {
+        grid-template-columns: 1fr 1.2fr 1fr;
+    }
+
+
+    .departure h3,
+    .arrival h3 {
+        font-size: 18px;
+    }
+
+
+    .departure span,
+    .arrival span {
+        font-size: 12px;
+    }
+
+
+    .route small {
+        font-size: 10px;
+    }
+
+
+    .baggage {
+        font-size: 12px;
+    }
+
+
+    .price h2 {
+        font-size: 22px;
+    }
+
+
+    .price small {
+        font-size: 11px;
+    }
+
+
+    .book-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+}
+

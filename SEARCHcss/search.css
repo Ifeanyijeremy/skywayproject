@@ -948,16 +948,6 @@ body.menu-open{
    FILTER SIDEBAR
 ========================================== */
 
-.filter-sidebar{
-
-    position:sticky;
-
-    top:100px;
-
-    align-self:start;
-
-}
-
 /* ==========================================
    FILTER CARD
 ========================================== */
@@ -1578,5 +1568,248 @@ FOOTER
     color:white;
 
     font-size:.9rem;
+
+}
+
+
+
+
+
+/* ==========================
+   LAPTOP
+========================== */
+
+@media (max-width:1200px){
+
+    .flight-card{
+
+        grid-template-columns:
+        150px
+        minmax(0,1fr)
+        120px
+        150px;
+
+        gap:20px;
+
+    }
+
+    .departure h3,
+    .arrival h3{
+
+        font-size:1.6rem;
+
+    }
+
+    .price h2{
+
+        font-size:1.7rem;
+
+    }
+
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width:992px){
+
+.flight-card{
+
+grid-template-columns:1fr;
+
+gap:25px;
+
+padding:25px;
+
+}
+
+.airline,
+.flight-info,
+.baggage,
+.price{
+
+border:none;
+
+padding:0;
+
+}
+
+.airline{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+}
+
+.airline-logo{
+
+margin-bottom:0;
+
+}
+
+}
+
+@media (max-width:992px){
+
+.flight-info{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.route{
+
+margin:0;
+
+width:100%;
+
+}
+
+}
+
+@media (max-width:992px){
+
+.baggage{
+
+justify-content:center;
+
+text-align:center;
+
+}
+
+}
+
+@media (max-width:992px){
+
+.price{
+
+text-align:center;
+
+}
+
+.book-btn{
+
+width:220px;
+
+margin:auto;
+
+margin-top:15px;
+
+}
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:768px){
+
+.departure h3,
+.arrival h3{
+
+font-size:1.4rem;
+
+}
+
+.route{
+
+margin:0;
+
+}
+
+.price h2{
+
+font-size:1.6rem;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.flight-info{
+
+align-items:center;
+
+}
+
+.route{
+
+order:2;
+
+width:100%;
+
+}
+
+.departure{
+
+order:1;
+
+}
+
+.arrival{
+
+order:3;
+
+}
+
+}
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width:576px){
+
+.flight-card{
+
+padding:18px;
+
+}
+
+.airline{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.book-btn{
+
+width:100%;
+
+}
+
+}
+
+@media (max-width:400px){
+
+.departure h3,
+.arrival h3{
+
+font-size:1.2rem;
+
+}
+
+.price h2{
+
+font-size:1.4rem;
+
+}
+
+.airline-logo{
+
+width:52px;
+height:52px;
+
+}
 
 }
