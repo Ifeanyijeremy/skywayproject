@@ -198,11 +198,11 @@ function createFlightCard(flight) {
 
             <small>per traveler</small>
 
-            <button class="book-btn">
-
-                Book Now
-
-            </button>
+        <button
+            class="book-btn"
+            data-flight-id="${flight.id}">
+            Book Now
+        </button>
 
         </div>
 
@@ -223,9 +223,23 @@ function renderFlights(data) {
     });
 
 }
-// renderFlights();
 
-// Filter flights by airline
+
+flightResults.addEventListener("click", function (event) {
+
+    const bookButton = event.target.closest(".book-btn");
+
+    if (!bookButton) return;
+
+    const flightId = bookButton.dataset.flightId;
+
+    // Save selected flight
+    localStorage.setItem("selectedFlightId", flightId);
+
+    // Go to login page
+    window.location.href = "flightdetails.html";
+
+});
 
 
 function filterFlights() {
@@ -366,138 +380,3 @@ function sortFlights(sortType) {
 }
 
 renderFlights(filteredFlights);
-
-
-// function filterFlights() {
-
-//     const selectedAirlines = [];
-
-//     airlineFilters.forEach(filter => {
-
-//         if (filter.checked) {
-
-//             selectedAirlines.push(filter.value);
-
-//         }
-
-//     });
-
-//     if (selectedAirlines.length === 0) {
-
-//         filteredFlights = [...flights];
-
-//     } else {
-
-//         filteredFlights = flights.filter(flight => {
-
-//             return selectedAirlines.includes(flight.airline);
-
-//         });
-
-//     }
-
-//     renderFlights(filteredFlights);
-
-// }
-
-
-// stopFilters.forEach(filter => {
-
-//     filter.addEventListener("change", filterFlightsByStop);
-
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function filterFlightsByStop() {
-
-//     const selectedStops = [];
-//     console.log(selectedStops);
-//     stopFilters.forEach(filter => {
-
-//         if (filter.checked) {
-
-//             selectedStops.push(filter.value);
-
-//         }
-
-//     });
-
-//     if (selectedStops.length === 0) {
-
-//         filteredFlights = [...flights];
-
-//     } else {
-
-//         filteredFlights = flights.filter(flight => {
-
-//             return selectedStops.includes(flight.stop);
-
-//         });
-
-//     }
-
-//     renderFlights(filteredFlights);
-
-// }
-
-
-// stopFilters.forEach(filter => {
-
-//     filter.addEventListener("change", filterFlightsByStop);
-
-// });
-
-// function filterFlightsByStop() {
-
-//     const selectedStops = [];
-//     console.log(selectedStops);
-//     stopFilters.forEach(filter => {
-
-//         if (filter.checked) {
-
-//             selectedStops.push(filter.value);
-
-//         }
-
-//     });
-
-//     if (selectedStops.length === 0) {
-
-//         filteredFlights = [...flights];
-
-//     } else {
-
-//         filteredFlights = flights.filter(flight => {
-
-//             return selectedStops.includes(flight.stop);
-
-//         });
-
-//     }
-
-//     renderFlights(filteredFlights);
-
-// }
-

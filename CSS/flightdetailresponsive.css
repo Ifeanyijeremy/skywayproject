@@ -1,0 +1,92 @@
+@media (max-width: 900px) {
+
+    .flight-details-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .price-card {
+        position: static;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .flight-details-page {
+        padding-top: 20px;
+    }
+
+    .breadcrumb {
+        overflow-x: auto;
+        white-space: nowrap;
+        font-size: 11px;
+    }
+
+    .details-card,
+    .price-card {
+        border-radius: 20px;
+        padding: 17px;
+    }
+
+
+    .flight-top {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .airline-info p {
+        font-size: 10px;
+    }
+
+    .cabin-badge {
+        padding: 7px 12px;
+        font-size: 10px;
+    }
+
+
+    .flight-route {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .arrival {
+        text-align: left;
+    }
+
+    .flight-duration {
+        order: 3;
+    }
+
+
+    .airline-details-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .airline-details-grid div:last-child {
+        text-align: left;
+    }
+
+
+    .baggage-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .amenities-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+
+    .amenity {
+        grid-template-columns: 18px 1fr auto;
+    }
+
+
+    .airport strong {
+        font-size: 23px;
+    }
+
+}
