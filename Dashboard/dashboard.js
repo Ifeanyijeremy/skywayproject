@@ -89,11 +89,86 @@ if (storedUser) {
 // MOBILE SIDEBAR
 // =========================================
 
-const mobileMenuBtn =
-    document.getElementById(
-        "mobileMenuBtn"
-    );
+// const mobileMenuBtn =
+//     document.getElementById(
+//         "mobileMenuBtn"
+//     );
 
+
+// const sidebar =
+//     document.getElementById("sidebar");
+
+
+// if (mobileMenuBtn && sidebar) {
+
+//     mobileMenuBtn.addEventListener(
+//         "click",
+//         () => {
+
+//             sidebar.classList.toggle(
+//                 "show"
+//             );
+
+//         }
+//     );
+
+// }
+
+
+
+
+
+// const mobileMenuBtn =
+//     document.getElementById("mobileMenuBtn");
+
+// const sidebar =
+//     document.getElementById("sidebar");
+
+
+// if (mobileMenuBtn && sidebar) {
+
+//     // =========================================
+//     // OPEN / CLOSE SIDEBAR
+//     // =========================================
+
+//     mobileMenuBtn.addEventListener("click", (event) => {
+
+//         // Prevent the document click from firing
+//         event.stopPropagation();
+
+//         sidebar.classList.toggle("show");
+
+
+//         // Change hamburger ↔ X
+
+//         if (sidebar.classList.contains("show")) {
+
+//             mobileMenuBtn.innerHTML =
+//                 '<i class="fa-solid fa-xmark"></i>';
+
+//             mobileMenuBtn.setAttribute(
+//                 "aria-label",
+//                 "Close menu"
+//             );
+
+//         } else {
+
+//             mobileMenuBtn.innerHTML =
+//                 '<i class="fa-solid fa-bars"></i>';
+
+//             mobileMenuBtn.setAttribute(
+//                 "aria-label",
+//                 "Open menu"
+//             );
+
+//         }
+
+//     });
+
+
+
+const mobileMenuBtn =
+    document.getElementById("mobileMenuBtn");
 
 const sidebar =
     document.getElementById("sidebar");
@@ -101,18 +176,107 @@ const sidebar =
 
 if (mobileMenuBtn && sidebar) {
 
-    mobileMenuBtn.addEventListener(
-        "click",
-        () => {
+    // OPEN / CLOSE SIDEBAR
+    mobileMenuBtn.addEventListener("click", (event) => {
 
-            sidebar.classList.toggle(
-                "show"
+        event.stopPropagation();
+
+        sidebar.classList.toggle("show");
+
+
+        if (sidebar.classList.contains("show")) {
+
+            mobileMenuBtn.innerHTML =
+                '<i class="fa-solid fa-xmark"></i>';
+
+            mobileMenuBtn.setAttribute(
+                "aria-label",
+                "Close dashboard menu"
+            );
+
+        } else {
+
+            mobileMenuBtn.innerHTML =
+                '<i class="fa-solid fa-bars"></i>';
+
+            mobileMenuBtn.setAttribute(
+                "aria-label",
+                "Open dashboard menu"
             );
 
         }
-    );
+
+    });
+
+
+    // CLOSE WHEN CLICKING OUTSIDE
+    document.addEventListener("click", (event) => {
+
+        if (
+            sidebar.classList.contains("show") &&
+            !sidebar.contains(event.target) &&
+            !mobileMenuBtn.contains(event.target)
+        ) {
+
+            sidebar.classList.remove("show");
+
+
+            mobileMenuBtn.innerHTML =
+                '<i class="fa-solid fa-bars"></i>';
+
+            mobileMenuBtn.setAttribute(
+                "aria-label",
+                "Open dashboard menu"
+            );
+
+        }
+
+    });
 
 }
+
+
+
+//     // =========================================
+//     // CLICK OUTSIDE SIDEBAR
+//     // =========================================
+
+//     document.addEventListener("click", (event) => {
+
+//         const clickedInsideSidebar =
+//             sidebar.contains(event.target);
+
+//         const clickedMenuButton =
+//             mobileMenuBtn.contains(event.target);
+
+
+//         if (
+//             sidebar.classList.contains("show") &&
+//             !clickedInsideSidebar &&
+//             !clickedMenuButton
+//         ) {
+
+//             sidebar.classList.remove("show");
+
+
+//             // Reset hamburger icon
+
+//             mobileMenuBtn.innerHTML =
+//                 '<i class="fa-solid fa-bars"></i>';
+
+//             mobileMenuBtn.setAttribute(
+//                 "aria-label",
+//                 "Open menu"
+//             );
+
+//         }
+
+//     });
+
+// }
+
+
+
 
 // =========================================
 // LOGOUT
