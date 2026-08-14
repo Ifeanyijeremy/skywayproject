@@ -43,6 +43,15 @@
 
         <div class="header-right">
 
+            <button
+                    type="button"
+                    class="mobile-menu-btn"
+                    id="mobileMenuBtn"
+                    aria-label="Open menu"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
             <div class="support-info">
 
                 <div class="phone-icon">
@@ -53,16 +62,6 @@
                     <strong>+234 806 626 5570</strong>
                     <span>Talk to our support</span>
                 </div>
-
-                <button
-                    type="button"
-                    class="mobile-menu-btn"
-                    aria-label="Open menu"
-                >
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-
-
             </div>
 
             <a
@@ -75,6 +74,52 @@
         </div>
 
     </header>
+
+    <!-- Mobile Side Menu -->
+
+<div
+    class="menu-overlay"
+    id="menuOverlay"
+></div>
+
+<aside
+    class="mobile-sidebar"
+    id="mobileSidebar"
+>
+
+    <button
+        type="button"
+        class="close-menu-btn"
+        id="closeMenuBtn"
+        aria-label="Close menu"
+    >
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+
+    <div class="mobile-support">
+
+        <div class="mobile-support-icon">
+            <i class="fa-solid fa-phone"></i>
+        </div>
+
+        <div>
+            <strong>+234 806 626 5570</strong>
+            <span>Talk to our support</span>
+        </div>
+
+    </div>
+
+
+    <a
+        href="dashboard.html"
+        class="mobile-dashboard-btn"
+    >
+        <i class="fa-solid fa-gauge-high"></i>
+        Dashboard
+    </a>
+
+</aside>
 
 
     <!-- ================= MAIN ================= -->
@@ -273,7 +318,7 @@
 <!-- FOOTER SECTION -->
 
 
-    <script src="bookingConfirmation.js"></script>
+    <script src="JS/bookingConfirmation.js"></script>
 
 </body>
 </html>

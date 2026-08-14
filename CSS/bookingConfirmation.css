@@ -19,11 +19,6 @@ a {
     color: inherit;
 }
 
-
-.mobile-menu-btn {
-    display: none;
-}
-
 /* =========================================
    HEADER
 ========================================= */
@@ -577,7 +572,6 @@ a {
 
 
 
-
 /* =========================================
    MOBILE — BOOKING CONFIRMATION
 ========================================= */
@@ -600,7 +594,6 @@ a {
         width: 100%;
         height: 82px;
         min-height: 82px;
-
         padding: 0 20px;
 
         position: sticky;
@@ -1033,267 +1026,257 @@ a {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*==============================
-FOOTER
-===============================*/
-
-
-
 /* =========================================
-   TABLET
+   MOBILE MENU
 ========================================= */
-/* 
-@media (max-width: 768px) {
+
+.mobile-menu-btn,
+.mobile-sidebar,
+.menu-overlay {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+
+    /* ---------- HEADER ---------- */
+
+@media (max-width: 600px) {
 
     .confirmation-header {
-        min-height: 90px;
-        padding: 0 4%;
+        width: 100%;
+        height: 75px;
+        min-height: 75px;
+
+        padding: 0 18px;
+
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+        background: #faf8f4;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .skyway-logo img {
-        width: 45px;
+        width: 125px;
     }
 
-    .skyway-logo h2{
 
-    font-size:1rem;
-
-    font-weight:700;
-}
-
-.skyway-logo h2 span{
-
-    font-size:.68rem;
-}
+    /* Keep the header-right visible
+       because hamburger is inside it */
 
     .header-right {
-        gap: 15px;
+        display: flex;
+
+        align-items: center;
+        justify-content: flex-end;
+
+        gap: 8px;
     }
 
-    .support-info {
+
+    /* Hide only these */
+
+    .support-info,
+    .dashboard-btn {
         display: none;
     }
 
-    .dashboard-btn {
-        padding: 11px 18px;
-        font-size: 13px;
-    }
 
-    .confirmation-main {
-        width: 92%;
-        margin-top: 25px;
-    }
+    /* Hamburger */
 
-    .confirmation-intro h1 {
-        font-size: 24px;
-    }
+    .mobile-menu-btn {
+        display: flex;
 
-    .flight-route {
-        gap: 10px;
-    }
+        width: 38px;
+        height: 38px;
 
-    .airport strong {
-        font-size: 23px;
-    }
+        align-items: center;
+        justify-content: center;
 
+        border: none;
+        background: transparent;
+
+        color: #184c4f;
+
+        font-size: 20px;
+
+        cursor: pointer;
+    }
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
+    /* ---------- OVERLAY ---------- */
 
-/* @media (max-width: 550px) {
+    .menu-overlay {
+        display: block;
 
-    .confirmation-header {
-        min-height: 75px;
-        padding: 0 3%;
-}
+        position: fixed;
 
-    .skyway-logo img {
-        width: 45px;
-    }
-    .skyway-logo h2{
+        inset: 0;
 
-    font-size:1rem;
+        background: rgba(0, 0, 0, 0.35);
 
-    font-weight:700;
-  }
+        opacity: 0;
+        visibility: hidden;
 
-    .skyway-logo h2 span{
+        transition:
+            opacity 0.3s ease,
+            visibility 0.3s ease;
 
-    font-size:.68rem;
-}
-
-    .dashboard-btn {
-        padding: 9px 14px;
-        font-size: 11px;
-        border-radius: 7px;
+        z-index: 1998;
     }
 
 
-    .confirmation-main {
-        width: 94%;
-        margin-top: 18px;
-        margin-bottom: 40px;
-    }
+    /* ---------- SIDEBAR ---------- */
 
+    .mobile-sidebar {
+        display: flex;
 
-    .success-icon {
-        width: 55px;
-        height: 55px;
-        font-size: 25px;
-    }
-
-    .confirmation-intro h1 {
-        font-size: 21px;
-    }
-
-    .confirmation-intro > p {
-        font-size: 11px;
-        max-width: 340px;
-    }
-
-    .booking-reference {
-        width: 220px;
-        padding: 9px 15px;
-    }
-
-    .booking-reference strong {
-        font-size: 15px;
-    } */
-
-
-    /* Cards */
-
-    /* .confirmation-card {
-        border-radius: 18px;
-        padding: 17px 15px;
-        margin-top: 16px;
-    }
-
-
-    .confirmation-card h2 {
-        font-size: 14px;
-    }
-
-    .trip-badge {
-        padding: 6px 11px;
-        font-size: 9px;
-    }
-
-
-    /* Flight */
-
-    /* .airline-info {
-        margin-top: 11px;
-    }
-
-    .airline-info h3 {
-        font-size: 13px;
-    }
-
-    .airline-info p {
-        font-size: 9px;
-    }
-
-
-    .flight-route {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .airport {
-        text-align: left;
-    }
-
-    .arrival {
-        text-align: left;
-    }
-
-    .airport strong {
-        font-size: 24px;
-    }
-
-    .airport span {
-        font-size: 11px;
-    }
-
-    .airport small {
-        font-size: 8px;
-    }
-
-
-    .flight-duration {
-        order: 3;
-
-        width: 100%;
-
-        flex-direction: row;
-    }
-
-    .route-line {
-        flex: 1;
-    } */ 
-
-
-    /* Passenger */
-
-    /* .passenger-details h3 {
-        font-size: 12px;
-    }
-
-    .passenger-details p {
-        font-size: 9px;
-    }
-
-    .passenger-type {
-        font-size: 9px;
-    } */
-
-
-    /* Actions */
-
-    /* .confirmation-actions {
         flex-direction: column;
+
+        position: fixed;
+
+        top: 0;
+        right: 0;
+
+        width: min(300px, 82vw);
+        height: 100vh;
+
+        padding: 25px 22px;
+
+        background: #ffffff;
+
+        box-shadow:
+            -8px 0 30px rgba(0, 0, 0, 0.12);
+
+        transform: translateX(100%);
+
+        transition:
+            transform 0.3s ease;
+
+        z-index: 1999;
+    }
+
+
+    /* ---------- OPEN STATE ---------- */
+
+    .mobile-sidebar.show {
+        transform: translateX(0);
+    }
+
+    .menu-overlay.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    /* ---------- CLOSE ---------- */
+
+    .close-menu-btn {
+        align-self: flex-end;
+
+        width: 36px;
+        height: 36px;
+
+        border: none;
+
+        border-radius: 50%;
+
+        background: #f2f2f2;
+
+        color: #184c4f;
+
+        font-size: 17px;
+
+        cursor: pointer;
+    }
+
+
+    /* ---------- SUPPORT ---------- */
+
+    .mobile-support {
+        display: flex;
+
+        align-items: center;
+
+        gap: 12px;
+
+        margin-top: 45px;
+
+        padding-bottom: 25px;
+
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .mobile-support-icon {
+        width: 42px;
+        height: 42px;
+
+        flex-shrink: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        background: #e8eeee;
+
+        color: #184c4f;
+    }
+
+    .mobile-support strong {
+        display: block;
+
+        color: #184c4f;
+
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .mobile-support span {
+        display: block;
+
+        margin-top: 3px;
+
+        color: #888;
+
+        font-size: 10px;
+    }
+
+
+    /* ---------- DASHBOARD ---------- */
+
+    .mobile-dashboard-btn {
+        display: flex;
 
         align-items: center;
 
         gap: 10px;
 
-        margin-top: 18px;
-    }
+        margin-top: 22px;
 
-    .action-btn {
-        width: 100%;
-        max-width: 300px;
+        padding: 13px 15px;
 
-        min-height: 44px;
+        border-radius: 9px;
+
+        background: #e47b5e;
+
+        color: #ffffff;
 
         font-size: 12px;
+        font-weight: 600;
+
+        transition: 0.2s ease;
     }
 
-
-    .confirmation-note {
-        text-align: center;
+    .mobile-dashboard-btn:hover {
+        background: #d96d50;
     }
 
-    .confirmation-note p {
-        font-size: 9px;
-    }
-
-} */
-
-
+}
