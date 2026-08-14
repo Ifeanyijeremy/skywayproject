@@ -20,6 +20,10 @@ a {
 }
 
 
+.mobile-menu-btn {
+    display: none;
+}
+
 /* =========================================
    HEADER
 ========================================= */
@@ -572,10 +576,485 @@ a {
 }
 
 
+
+
+/* =========================================
+   MOBILE — BOOKING CONFIRMATION
+========================================= */
+
+@media (max-width: 600px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+    }
+    /* ================= HEADER ================= */
+
+    .confirmation-header {
+        width: 100%;
+        height: 82px;
+        min-height: 82px;
+
+        padding: 0 20px;
+
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+        background: #faf8f4;
+    }
+
+    .skyway-logo img {
+        width: 35px;
+        max-width: 145px;
+    }
+
+    .header-right {
+        gap: 0;
+    }
+
+    .support-info,
+    .dashboard-btn {
+        display: none;
+    }
+
+
+    /* If you have a hamburger button */
+
+    .mobile-menu-btn {
+        display: flex;
+
+        width: 30px;
+        height: 30px;
+
+        align-items: center;
+        justify-content: center;
+
+        border: none;
+        background: transparent;
+
+        color: #184c4f;
+
+        font-size: 19px;
+    }
+
+
+    /* ================= MAIN ================= */
+
+    .confirmation-main {
+        width: calc(100% - 40px);
+        max-width: 350px;
+
+        margin: 45px auto 40px;
+    }
+
+
+    /* ================= INTRO ================= */
+
+    .confirmation-intro {
+        width: 100%;
+    }
+
+    .success-icon {
+        width: 70px;
+        height: 70px;
+
+        margin-bottom: 8px;
+
+        font-size: 27px;
+    }
+
+    .confirmation-intro h1 {
+        width: 100%;
+
+        font-size: 20px;
+        line-height: 1.25;
+
+        white-space: nowrap;
+
+        margin-bottom: 9px;
+    }
+
+    .confirmation-intro > p {
+        width: 100%;
+        max-width: 330px;
+
+        font-size: 10px;
+        line-height: 1.4;
+
+        margin-bottom: 13px;
+    }
+
+
+    /* ================= BOOKING REFERENCE ================= */
+
+    .booking-reference {
+        width: 280px;
+        max-width: 100%;
+
+        padding: 10px 15px;
+
+        border-radius: 30px;
+    }
+
+    .booking-reference span {
+        font-size: 8px;
+    }
+
+    .booking-reference strong {
+        font-size: 16px;
+    }
+
+
+    /* ================= CARDS ================= */
+
+    .confirmation-card {
+        width: 100%;
+
+        padding: 20px 23px;
+
+        margin-top: 24px;
+
+        border-radius: 25px;
+    }
+
+    .confirmation-card h2 {
+        font-size: 16px;
+    }
+
+
+    /* ================= FLIGHT CARD ================= */
+
+    .card-heading {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .trip-badge {
+        padding: 9px 16px;
+
+        font-size: 9px;
+
+        border-radius: 9px;
+    }
+
+
+    /* Airline */
+
+    .airline-info {
+        margin-top: 14px;
+
+        gap: 12px;
+    }
+
+    .airline-logo {
+        width: 43px;
+        height: 43px;
+
+        flex-shrink: 0;
+
+        font-size: 12px;
+    }
+
+    .airline-info h3 {
+        font-size: 15px;
+    }
+
+    .airline-info p {
+        font-size: 10px;
+
+        white-space: nowrap;
+    }
+
+
+    /* ================= FLIGHT ROUTE ================= */
+
+    .flight-route {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr 75px 1fr;
+
+        align-items: center;
+
+        gap: 8px;
+    }
+
+    .airport {
+        width: 100%;
+
+        text-align: left;
+    }
+
+    .airport.arrival {
+        text-align: right;
+    }
+
+    .airport strong {
+        font-size: 21px;
+
+        line-height: 1.2;
+    }
+
+    .airport span {
+        display: block;
+
+        font-size: 10px;
+
+        line-height: 1.25;
+    }
+
+    .airport small {
+        display: block;
+
+        font-size: 8px;
+
+        line-height: 1.3;
+    }
+
+
+    /* Duration */
+
+    .flight-duration {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 3px;
+    }
+
+    .flight-duration > span {
+        font-size: 9px;
+    }
+
+    .flight-duration strong {
+        font-size: 9px;
+    }
+
+    .route-line {
+        width: 100%;
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 6px;
+    }
+
+    .route-line i {
+        width: 5px;
+        height: 5px;
+
+        flex-shrink: 0;
+    }
+
+    .route-line .line {
+        flex: 1;
+    }
+
+
+    /* ================= PASSENGER ================= */
+
+    .passenger-card {
+        margin-top: 20px;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .passenger-info {
+        width: 100%;
+    }
+
+    .passenger-avatar {
+        width: 38px;
+        height: 38px;
+
+        flex-shrink: 0;
+
+        margin-right: 10px;
+
+        font-size: 9px;
+    }
+
+    .passenger-details {
+        min-width: 0;
+    }
+
+    .passenger-details h3 {
+        font-size: 11px;
+
+        white-space: nowrap;
+    }
+
+    .passenger-details p {
+        font-size: 8px;
+
+        white-space: nowrap;
+    }
+
+    .passenger-type {
+        margin-left: auto;
+
+        font-size: 9px;
+
+        white-space: nowrap;
+    }
+
+
+    /* ================= BUTTONS ================= */
+
+    .confirmation-actions {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 16px;
+
+        margin-top: 24px;
+    }
+
+    .action-btn {
+        width: 100%;
+        max-width: 100%;
+
+        height: 47px;
+        min-height: 47px;
+
+        border-radius: 8px;
+
+        font-size: 11px;
+    }
+
+
+    /* ================= NOTE ================= */
+
+    .confirmation-note {
+        width: 100%;
+
+        margin-top: 15px;
+
+        gap: 6px;
+
+        white-space: nowrap;
+    }
+
+    .confirmation-note span {
+        width: 16px;
+        height: 16px;
+
+        flex-shrink: 0;
+
+        font-size: 7px;
+    }
+
+    .confirmation-note p {
+        font-size: 8px;
+
+        white-space: nowrap;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 370px) {
+
+    .confirmation-header {
+        padding: 0 15px;
+    }
+
+    .skyway-logo img {
+        width: 35px;
+    }
+
+    .confirmation-main {
+        width: calc(100% - 30px);
+    }
+
+    .confirmation-intro h1 {
+        font-size: 18px;
+    }
+
+    .confirmation-intro > p {
+        font-size: 9px;
+    }
+
+    .confirmation-card {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .flight-route {
+        grid-template-columns: 1fr 65px 1fr;
+        gap: 5px;
+    }
+
+    .airport strong {
+        font-size: 19px;
+    }
+
+    .airport span {
+        font-size: 9px;
+    }
+
+    .airport small {
+        font-size: 7px;
+    }
+
+    .airline-info p {
+        font-size: 8px;
+    }
+
+    .passenger-details p {
+        font-size: 7px;
+    }
+
+    .confirmation-note p {
+        font-size: 7px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==============================
+FOOTER
+===============================*/
+
+
+
 /* =========================================
    TABLET
 ========================================= */
-
+/* 
 @media (max-width: 768px) {
 
     .confirmation-header {
@@ -636,7 +1115,7 @@ a {
    MOBILE
 ========================================= */
 
-@media (max-width: 550px) {
+/* @media (max-width: 550px) {
 
     .confirmation-header {
         min-height: 75px;
@@ -694,12 +1173,12 @@ a {
 
     .booking-reference strong {
         font-size: 15px;
-    }
+    } */
 
 
     /* Cards */
 
-    .confirmation-card {
+    /* .confirmation-card {
         border-radius: 18px;
         padding: 17px 15px;
         margin-top: 16px;
@@ -718,7 +1197,7 @@ a {
 
     /* Flight */
 
-    .airline-info {
+    /* .airline-info {
         margin-top: 11px;
     }
 
@@ -767,12 +1246,12 @@ a {
 
     .route-line {
         flex: 1;
-    }
+    } */ 
 
 
     /* Passenger */
 
-    .passenger-details h3 {
+    /* .passenger-details h3 {
         font-size: 12px;
     }
 
@@ -782,12 +1261,12 @@ a {
 
     .passenger-type {
         font-size: 9px;
-    }
+    } */
 
 
     /* Actions */
 
-    .confirmation-actions {
+    /* .confirmation-actions {
         flex-direction: column;
 
         align-items: center;
@@ -815,4 +1294,6 @@ a {
         font-size: 9px;
     }
 
-}
+} */
+
+
