@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Booking Confirmed | Skyway Travel</title>
+
+    <!-- Poppins -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="CSS/bookingConfirmation.css"
+    >
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="confirmation-header">
+
+        <a href="index.html" class="skyway-logo">
+            <img
+                src="asset/logo/logo.png"
+                alt="Skyway Travel"
+            >
+             <h2>Skyway <span>Travel</span></h2>
+        </a>
+
+        <div class="header-right">
+
+            <div class="support-info">
+
+                <div class="phone-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div class="support-text">
+                    <strong>+234 806 626 5570</strong>
+                    <span>Talk to our support</span>
+                </div>
+
+            </div>
+
+            <a
+                href="dashboard.html"
+                class="dashboard-btn"
+            >
+                Dashboard
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="confirmation-main">
+
+        <!-- Confirmation Message -->
+
+        <section class="confirmation-intro">
+
+            <div class="success-icon">
+                <i class="fa-solid fa-check"></i>
+            </div>
+
+            <h1>Booking confirmed!</h1>
+
+            <p>
+                Your flight has been booked successfully.
+                A confirmation email has been sent to
+                oziomaegle@gmail.com
+            </p>
+
+            <div class="booking-reference">
+
+                <span>BOOKING REFERENCE</span>
+
+                <strong>SKY-8X29K1</strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FLIGHT SUMMARY ================= -->
+
+        <section class="confirmation-card flight-card">
+
+            <div class="card-heading">
+
+                <h2>Flight summary</h2>
+
+                <span class="trip-badge">
+                    Round Trip
+                </span>
+
+            </div>
+
+
+            <!-- Airline -->
+
+            <div class="airline-info">
+
+                <div class="airline-logo">
+                    AF
+                </div>
+
+                <div>
+                    <h3>Air France</h3>
+
+                    <p>
+                        Flight AF 1082 · Operated by Air France
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="card-divider"></div>
+
+
+            <!-- Flight Route -->
+
+            <div class="flight-route">
+
+                <div class="airport departure">
+
+                    <strong>10:20</strong>
+
+                    <span>Lagos (LOS)</span>
+
+                    <small>
+                        Murtala Muhammed Intl · Terminal 2
+                    </small>
+
+                </div>
+
+
+                <div class="flight-duration">
+
+                    <span>6h 40m</span>
+
+                    <div class="route-line">
+
+                        <i></i>
+
+                        <div class="line"></div>
+
+                        <i></i>
+
+                    </div>
+
+                    <strong>Nonstop</strong>
+
+                </div>
+
+
+                <div class="airport arrival">
+
+                    <strong>15:00</strong>
+
+                    <span>Paris (CDG)</span>
+
+                    <small>
+                        Charles de Gaulle · Terminal 2E
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PASSENGER ================= -->
+
+        <section class="confirmation-card passenger-card">
+
+            <h2>Passenger information</h2>
+
+            <div class="card-divider"></div>
+
+            <div class="passenger-info">
+
+                <div class="passenger-avatar">
+                    OE
+                </div>
+
+                <div class="passenger-details">
+
+                    <h3>Ozioma Egle</h3>
+
+                    <p>
+                        Passport A1234567 · Seat 14C
+                    </p>
+
+                </div>
+
+                <span class="passenger-type">
+                    Adult
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ACTIONS ================= -->
+
+        <section class="confirmation-actions">
+
+            <a
+                href="#"
+                class="action-btn download-btn"
+                id="downloadTicket"
+            >
+                <i class="fa-solid fa-download"></i>
+                Download E-Ticket
+            </a>
+
+            <a
+                href="manage-booking.html"
+                class="action-btn manage-btn"
+            >
+                Manage Booking
+            </a>
+
+        </section>
+
+
+        <!-- Confirmation Note -->
+
+        <div class="confirmation-note">
+
+            <span>
+                <i class="fa-solid fa-check"></i>
+            </span>
+
+            <p>
+                A copy of your itinerary has also been emailed to you
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <script src="bookingConfirmation.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,818 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #faf8f4;
+    color: #171717;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.confirmation-header {
+    width: 100%;
+    min-height: 110px;
+
+    padding: 0 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: #d5d4d2;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.skyway-logo {
+    display: flex;
+    align-items: center;
+}
+
+.skyway-logo img {
+    width: 55px;
+    height: auto;
+    display: block;
+    margin-right: 20px;
+
+}
+
+.skyway-logo h2{
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    color: rgb(32, 73, 32);
+
+}
+
+.skyway-logo h2 span{
+
+    color: rgb(158, 81, 10);
+    font-size:.78rem;
+    display:block;
+    margin:-7px;
+    font-weight:400;
+    margin-left:17px;
+    letter-spacing:3px;
+
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+
+/* Support */
+
+.support-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.phone-icon {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: #e5e6e5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #184c4f;
+    font-size: 14px;
+}
+
+.support-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.support-text strong {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.support-text span {
+    font-size: 13px;
+    color: #777;
+}
+
+
+/* Dashboard */
+
+.dashboard-btn {
+    background: #e47b5e;
+    color: #fff;
+
+    padding: 14px 29px;
+
+    border-radius: 9px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.25s ease;
+}
+
+.dashboard-btn:hover {
+    background: #d96d50;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.confirmation-main {
+    width: min(820px, 90%);
+    margin: 32px auto 70px;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.confirmation-intro {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.success-icon {
+    width: 66px;
+    height: 66px;
+
+    border-radius: 50%;
+
+    background: #e1e7e5;
+
+    color: #18565a;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 32px;
+
+    margin-bottom: 5px;
+}
+
+.confirmation-intro h1 {
+    font-size: 27px;
+    font-weight: 700;
+
+    margin-bottom: 7px;
+}
+
+.confirmation-intro > p {
+    max-width: 540px;
+
+    color: #858585;
+
+    font-size: 13px;
+    line-height: 1.5;
+
+    margin-bottom: 13px;
+}
+
+
+/* Booking Reference */
+
+.booking-reference {
+    width: 255px;
+
+    padding: 10px 20px;
+
+    background: #e8f2f3;
+
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-reference span {
+    font-size: 9px;
+    font-weight: 600;
+    color: #205c60;
+}
+
+.booking-reference strong {
+    font-size: 17px;
+    color: #194e52;
+    line-height: 1.1;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.confirmation-card {
+    background: #fff;
+
+    border: 1px solid #dedede;
+
+    border-radius: 27px;
+
+    padding: 21px 22px;
+
+    margin-top: 22px;
+}
+
+
+/* Card heading */
+
+.card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.confirmation-card h2 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.trip-badge {
+    border: 1px solid #215d61;
+
+    color: #215d61;
+
+    padding: 8px 17px;
+
+    border-radius: 9px;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   AIRLINE
+========================================= */
+
+.airline-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 13px;
+}
+
+.airline-logo {
+    width: 39px;
+    height: 39px;
+
+    border-radius: 50%;
+
+    background: #087b68;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.airline-info h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.airline-info p {
+    color: #94949b;
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+
+/* Divider */
+
+.card-divider {
+    width: 100%;
+    height: 1px;
+    background: #e6e6e6;
+
+    margin: 13px 0;
+}
+
+
+/* =========================================
+   FLIGHT ROUTE
+========================================= */
+
+.flight-route {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.airport {
+    display: flex;
+    flex-direction: column;
+}
+
+.airport strong {
+    font-size: 26px;
+    font-weight: 600;
+
+    line-height: 1.1;
+}
+
+.airport span {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.airport small {
+    color: #8f9095;
+
+    font-size: 9px;
+
+    margin-top: 3px;
+}
+
+.arrival {
+    text-align: right;
+}
+
+
+/* Duration */
+
+.flight-duration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 4px;
+
+    color: #777;
+}
+
+.flight-duration > span {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.flight-duration strong {
+    font-size: 10px;
+    color: #20575b;
+}
+
+
+/* Route line */
+
+.route-line {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+}
+
+.route-line i {
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #8c919b;
+}
+
+.route-line .line {
+    flex: 1;
+    height: 1px;
+
+    background: #c8cbd0;
+}
+
+
+/* =========================================
+   PASSENGER
+========================================= */
+
+.passenger-card {
+    padding-bottom: 19px;
+}
+
+.passenger-info {
+    display: flex;
+    align-items: center;
+}
+
+.passenger-avatar {
+    width: 37px;
+    height: 37px;
+
+    border-radius: 50%;
+
+    border: 1px solid #28636a;
+
+    background: #edf4f4;
+
+    color: #28636a;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    margin-right: 12px;
+}
+
+.passenger-details h3 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.passenger-details p {
+    color: #91919a;
+    font-size: 10px;
+}
+
+.passenger-type {
+    margin-left: auto;
+
+    color: #676873;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.confirmation-actions {
+    display: flex;
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-top: 22px;
+}
+
+.action-btn {
+    width: 200px;
+
+    min-height: 45px;
+
+    border-radius: 9px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+.download-btn {
+    border: 1px solid #19545a;
+    color: #19545a;
+    background: transparent;
+
+    gap: 7px;
+}
+
+.download-btn:hover {
+    background: #19545a;
+    color: #fff;
+}
+
+.manage-btn {
+    background: #e47b5e;
+    color: #fff;
+}
+
+.manage-btn:hover {
+    background: #d96d50;
+}
+
+
+/* =========================================
+   NOTE
+========================================= */
+
+.confirmation-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    margin-top: 14px;
+}
+
+.confirmation-note span {
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    background: #e7f0ef;
+
+    color: #28636a;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 8px;
+}
+
+.confirmation-note p {
+    color: #92929a;
+    font-size: 10px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .confirmation-header {
+        min-height: 90px;
+        padding: 0 4%;
+    }
+
+    .skyway-logo img {
+        width: 45px;
+    }
+
+    .skyway-logo h2{
+
+    font-size:1rem;
+
+    font-weight:700;
+}
+
+.skyway-logo h2 span{
+
+    font-size:.68rem;
+}
+
+    .header-right {
+        gap: 15px;
+    }
+
+    .support-info {
+        display: none;
+    }
+
+    .dashboard-btn {
+        padding: 11px 18px;
+        font-size: 13px;
+    }
+
+    .confirmation-main {
+        width: 92%;
+        margin-top: 25px;
+    }
+
+    .confirmation-intro h1 {
+        font-size: 24px;
+    }
+
+    .flight-route {
+        gap: 10px;
+    }
+
+    .airport strong {
+        font-size: 23px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+    .confirmation-header {
+        min-height: 75px;
+        padding: 0 3%;
+}
+
+    .skyway-logo img {
+        width: 45px;
+    }
+    .skyway-logo h2{
+
+    font-size:1rem;
+
+    font-weight:700;
+  }
+
+    .skyway-logo h2 span{
+
+    font-size:.68rem;
+}
+
+    .dashboard-btn {
+        padding: 9px 14px;
+        font-size: 11px;
+        border-radius: 7px;
+    }
+
+
+    .confirmation-main {
+        width: 94%;
+        margin-top: 18px;
+        margin-bottom: 40px;
+    }
+
+
+    .success-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 25px;
+    }
+
+    .confirmation-intro h1 {
+        font-size: 21px;
+    }
+
+    .confirmation-intro > p {
+        font-size: 11px;
+        max-width: 340px;
+    }
+
+    .booking-reference {
+        width: 220px;
+        padding: 9px 15px;
+    }
+
+    .booking-reference strong {
+        font-size: 15px;
+    }
+
+
+    /* Cards */
+
+    .confirmation-card {
+        border-radius: 18px;
+        padding: 17px 15px;
+        margin-top: 16px;
+    }
+
+
+    .confirmation-card h2 {
+        font-size: 14px;
+    }
+
+    .trip-badge {
+        padding: 6px 11px;
+        font-size: 9px;
+    }
+
+
+    /* Flight */
+
+    .airline-info {
+        margin-top: 11px;
+    }
+
+    .airline-info h3 {
+        font-size: 13px;
+    }
+
+    .airline-info p {
+        font-size: 9px;
+    }
+
+
+    .flight-route {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .airport {
+        text-align: left;
+    }
+
+    .arrival {
+        text-align: left;
+    }
+
+    .airport strong {
+        font-size: 24px;
+    }
+
+    .airport span {
+        font-size: 11px;
+    }
+
+    .airport small {
+        font-size: 8px;
+    }
+
+
+    .flight-duration {
+        order: 3;
+
+        width: 100%;
+
+        flex-direction: row;
+    }
+
+    .route-line {
+        flex: 1;
+    }
+
+
+    /* Passenger */
+
+    .passenger-details h3 {
+        font-size: 12px;
+    }
+
+    .passenger-details p {
+        font-size: 9px;
+    }
+
+    .passenger-type {
+        font-size: 9px;
+    }
+
+
+    /* Actions */
+
+    .confirmation-actions {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 10px;
+
+        margin-top: 18px;
+    }
+
+    .action-btn {
+        width: 100%;
+        max-width: 300px;
+
+        min-height: 44px;
+
+        font-size: 12px;
+    }
+
+
+    .confirmation-note {
+        text-align: center;
+    }
+
+    .confirmation-note p {
+        font-size: 9px;
+    }
+
+}
