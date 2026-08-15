@@ -18,15 +18,9 @@
 }
 
 /* =========================================
-   SKYWAY PAGE ANIMATIONS
+   HERO LOAD ANIMATIONS
 ========================================= */
 
-
-/* -----------------------------------------
-   HERO LOAD ANIMATIONS
------------------------------------------ */
-
-/* Logo */
 .header .logo {
     opacity: 0;
     animation: heroSlideLeft 0.9s ease-out forwards;
@@ -89,66 +83,91 @@
 
 
 /* =========================================
-   HERO BACKGROUND ZOOM
+   HERO BACKGROUND ANIMATION
 ========================================= */
 
 .hero {
-    animation: heroZoom 12s ease-out both;
+    position: relative;
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
-@keyframes heroZoom {
+/* Animated background layer */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: -30px;
 
-    from {
-        background-size: 105%;
-    }
+    background: url("../asset/images/background.png")
+                center / cover
+                no-repeat;
 
-    to {
-        background-size: 100%;
-    }
+    animation: cinematicHero 20s ease-in-out infinite alternate;
 
+    will-change: transform;
+
+    z-index: 0;
 }
 
-/* -----------------------------------------
-   KEYFRAMES
------------------------------------------ */
 
+@keyframes cinematicHero {
 
-@keyframes slideInUp {
     from {
-        opacity: 0;
-        transform: translateY(70px);
+        transform: scale(1.02);
     }
 
     to {
-        opacity: 1;
-        transform: translateY(0);
+        transform: scale(1.06);
     }
+
 }
 
 
 /* =========================================
-   SCROLL ANIMATIONS
+   HERO CONTENT LAYERS
 ========================================= */
 
-/* Elements waiting to appear */
+.hero .overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+
+.hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================
+   SCROLL REVEAL
+========================================= */
+
 .scroll-reveal {
     opacity: 0;
     transform: translateY(70px);
+
     transition:
         opacity 0.8s ease,
         transform 0.8s ease;
 }
 
 
-/* When visible */
 .scroll-reveal.show {
     opacity: 1;
     transform: translateY(0);
 }
 
 
-/* Images */
+/* =========================================
+   IMAGE REVEAL
+========================================= */
+
 .scroll-image {
     opacity: 0;
     transform: translateY(60px) scale(0.96);
@@ -165,22 +184,6 @@
 }
 
 
-/* -----------------------------------------
-   REDUCED MOTION
------------------------------------------ */
-
-@media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-
-}
-
 /* =========================================
    SECTION REVEAL
 ========================================= */
@@ -188,10 +191,12 @@
 .reveal {
     opacity: 0;
     transform: translateY(50px);
+
     transition:
         opacity 0.9s ease,
         transform 0.9s ease;
 }
+
 
 .reveal.show {
     opacity: 1;
@@ -206,18 +211,18 @@
 .reveal-card {
     opacity: 0;
     transform: translateY(45px);
+
     transition:
         opacity 0.8s ease,
         transform 0.8s ease;
 }
+
 
 .reveal-card.show {
     opacity: 1;
     transform: translateY(0);
 }
 
-
-/* Different delays for cards */
 
 .reveal-card:nth-child(1) {
     transition-delay: 0.1s;
@@ -233,4 +238,21 @@
 
 .reveal-card:nth-child(4) {
     transition-delay: 0.4s;
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
 }

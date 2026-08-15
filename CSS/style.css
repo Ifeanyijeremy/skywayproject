@@ -408,7 +408,7 @@ body.menu-open{
 
     min-height:100vh;
 
-    background:url("../asset/images/background.png") center/cover;
+    /* background:url("../asset/images/background.png") center/cover; */
 
     display:flex;
 
