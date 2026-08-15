@@ -212,13 +212,13 @@ HEADER
 
     font-weight:700;
 
-    color:var(--light);
+    color: rgb(108, 105, 105);
 
 }
 
 .logo h2 span{
 
-    color:var(--amber);
+    color: rgb(202, 84, 11);
     font-size:.78rem;
     display:block;
     margin:-7px;
@@ -345,7 +345,7 @@ HEADER
 
     padding:11px 18px;
 
-    border-radius:10px;
+    border-radius:5px;
 
     background:var(--primary);
 
